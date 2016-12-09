@@ -18,35 +18,41 @@
 <body>
     
     <h2>Create Account</h2>
-      First name:<br>
-      <input type="text" name="firstName">
+      First name:<input type="text" name="firstName">
       <br>
-      Last name:<br>
-      <input type="text" name="lastName">
+      Last name:<input type="text" name="lastName">
       <br>
-      Username:<br>
-      <input type="text" name="userName">
+      Username:<input type="text" name="userName">
       <br>
-      Password:<br>
-      <input type="text" name="passWord">
+      Password:<input type="text" name="passWord">
       <br>
-      Confirm Password:<br>
-      <input type="text" name="confirmPassword">
+      Confirm Password:<input type="text" name="confirmPassword">
       <br>
-      Email address:<br>
-      <input type="text" name="emailAddress">
+      Email address:<input type="text" name="emailAddress">
+      <br>
+      Phone number: <input type="text" name="zipCode">
       
       <h3>Shipping address</h3>
-      Street address:<br>
-      <input type="text" name="streetAddress">
-      City:<br>
-      <input type="text" name="city">
-      County:<br>
-      <input type="text" name="county">
-      State:<br>
-      <input type="text" name="usa-State">
-      Zip code:<br>
-      <input type="text" name="zipCode">
+      Street address: <input type="text" name="ship-streetAddress">
+      <br>
+      City: <input type="text" name="ship-city">
+      <br>
+      County: <input type="text" name="ship-county">
+      <br>
+      State: <input type="text" name="ship-usa-State">
+      <br>
+      Zip code: <input type="text" name="ship-zipCode">
+      
+      <h3>Billing address</h3>
+      Street address: <input type="text" name="bill-streetAddress">
+      <br>
+      City: <input type="text" name="bill-city">
+      <br>
+      County: <input type="text" name="bill-county">
+      <br>
+      State: <input type="text" name="bill-usa-State">
+      <br>
+      Zip code: <input type="text" name="bill-zipCode">
       </p>
       <input type="submit" value="Submit">
       

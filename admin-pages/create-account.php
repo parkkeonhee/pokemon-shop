@@ -12,18 +12,19 @@
      <meta charset="utf-8">
     <title>Create Account </title>
     <link rel="stylesheet" type="text/css" href="../css/createAcc.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <body>
     
-    <h2> Create Account</h2>
+    <h2>Create Account</h2>
       First name:<br>
       <input type="text" name="firstName">
       <br>
       Last name:<br>
       <input type="text" name="lastName">
       <br>
-      User name:<br>
+      Username:<br>
       <input type="text" name="userName">
       <br>
       Password:<br>
@@ -31,8 +32,24 @@
       <br>
       Confirm Password:<br>
       <input type="text" name="confirmPassword">
+      <br>
+      Email address:<br>
+      <input type="text" name="emailAddress">
+      
+      <h3>Shipping address</h3>
+      Street address:<br>
+      <input type="text" name="streetAddress">
+      City:<br>
+      <input type="text" name="city">
+      County:<br>
+      <input type="text" name="county">
+      State:<br>
+      <input type="text" name="usa-State">
+      Zip code:<br>
+      <input type="text" name="zipCode">
       </p>
-      <br><br>
       <input type="submit" value="Submit">
+      
+      <a href="../login.php" class="button">Go back</a>
 </body>
 </html>

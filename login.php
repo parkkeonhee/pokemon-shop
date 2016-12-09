@@ -21,13 +21,13 @@
         <img src="images/pokemon-logo.jpg" alt="pokemon logo" />
         <p>
             <h1>User Login</h1>
-            Username: <input type="text" name="userName" value="Louis" />
-            <br> Password: <input type="password" name="password" value="Henry" />
+            Username: <input type="text" name="userName" value="Ash" />
+            <br> Password: <input type="password" name="password" value="Ketchum" />
             <br> Admin access: <input type="checkbox" name="adminOrNot" />
         </p>
         <input type="submit" value="Login" name="submit" class="button" />
         <br>
-        <a href="admin-pages/create-account.html" class="button-orange">Create an Account</a>
+        <a href="admin-pages/create-account.php" class="button-orange">Create an Account</a>
     </div>
 </body>
 

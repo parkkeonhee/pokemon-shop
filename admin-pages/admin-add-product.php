@@ -27,12 +27,13 @@ $name=$_POST["name"];
 $description=$_POST["description"];
 $img=$_POST["img"];
 $price=$_POST["price"];
+$type=$_POST["type"];
 $stock=$_POST["stock"];
 
 
 
 $sql = "INSERT INTO products
-VALUES ('$id','$name','$description','$img','$price','$stock')";
+VALUES ('$id','$name','$description','$img','$price','$type','$stock')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New product successfully saved";

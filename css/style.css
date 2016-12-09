@@ -1,0 +1,42 @@
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-orange {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.custom-bg {
+    background: #6CE6F6;
+    background-repeat: no-repeat;
+    background: -webkit-linear-gradient(left top, #6CE6F6, #fff);
+    background: -o-linear-gradient(bottom right, #6CE6F6, #fff);
+    background: -moz-linear-gradient(bottom right, #6CE6F6, #fff);
+    background: linear-gradient(to bottom right, #6CE6F6, #fff);
+}

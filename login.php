@@ -1,4 +1,13 @@
 <!doctype html>
+
+<!--
+    Created by Kenny Nguyen, Keon Hee Park, and Rashidat Akande
+    login.php
+	Course: CSC 4370 - Web Programming
+	Instructor: Louis Henry
+	Date: December 12, 2016
+-->
+
 <html lang="en-US">
 
 <head>

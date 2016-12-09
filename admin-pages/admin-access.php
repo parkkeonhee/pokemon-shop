@@ -141,6 +141,7 @@ $conn->close();
 		<p>description: <textarea name="description" rows="10" cols="25">ENTER description</textarea>
 		<p>img: <input name="img" type="text"></p>
 		<p>price: <input name="price" type="number"></p>
+		<p>type: <input name="type" type="text"></p>
 		<p>stock: <input name="stock" type="number"></p>
 		<input type="submit" id="btn2" value="Submit">
 		</form>

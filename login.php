@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body class="custom-bg">
+<body class="pokemon-bg">
     <div class="center">
         <img src="images/pokemon-logo.jpg" alt="pokemon logo" />
         <p>

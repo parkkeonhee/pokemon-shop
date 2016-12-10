@@ -66,13 +66,13 @@ if ($result0->num_rows > 0) {
 } else {
      echo "0 results";
 }
-//id, name,description, img, price 
-$sql1 = "SELECT id, name, description, img, price, stock  FROM products";
+//id, name,description, img,type, price 
+$sql1 = "SELECT id, name, description, img, price, type, stock  FROM products";
 $result1 = $conn->query($sql1);
 echo "<h3>PRODUCTS</h3>";
 if ($result1->num_rows > 0) {
      // output data of each row
-	echo "<table><tr><th>id</th><th>name</th><th>description</th><th>img</th><th>price</th><th>stock</th></tr>";
+	echo "<table><tr><th>id</th><th>name</th><th>description</th><th>img</th><th>price</th><th>type</th><th>stock</th></tr>";
      while($row = $result1->fetch_assoc()) {
 
 		 $id=$row["id"];
@@ -80,9 +80,10 @@ if ($result1->num_rows > 0) {
 		 $description=$row["description"];
 		 $img=$row["img"];
 		 $price=$row["price"];
+		 $type=$row["type"];
 		 $stock=$row["stock"];
 		 
-         echo "<tr><td>".$id."</td><td>".$name."</td><td>".$description."</td><td>".$img."</td><td>".$price."</td><td>".$stock."</td></tr>";
+         echo "<tr><td>".$id."</td><td>".$name."</td><td>".$description."</td><td>".$img."</td><td>".$price."</td><td>".$type."</td><td>".$stock."</td></tr>";
      }
 	 echo "</table>";
 } else {
@@ -161,7 +162,7 @@ $conn->close();
 		
 		<form action="../login.php" method="post">
 		<h3>Logout </h3>
-		<input type="submit" id="btn2" value="Submit">
+		<input type="submit" id="btn2" value="Log Out">
 		</form>
 
 

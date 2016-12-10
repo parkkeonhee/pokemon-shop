@@ -76,7 +76,7 @@ if ($result0->num_rows > 0) {
 			 else
 			 {
 				 //customer page
-				 echo '<a href="home.php"><input type="button" id="btn1" value="OK"></a>';
+				 echo '<a href="shop.php"><input type="button" id="btn1" value="OK"></a>';
 				 session_start();
 				 $_SESSION['name'] = $userName;
 			 }

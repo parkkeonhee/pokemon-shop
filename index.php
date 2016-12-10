@@ -15,13 +15,16 @@
 </head>
 
 <body>
-    <!--
-    This needs to dynamically change where
-    1. if user is logged in, it directs to account-change.php.
-    2. if user is not logged in, it directs to login.php.
-    -->
-    <a href="account-change.php" class="button" style="float:right;">Account</a>
-    <h1 style="text-align:center;float:center;">PokeShop</h1>
+	<?php
+        session_start();
+        session_unset();
+        session_destroy();
+		session_start();
+		$_SESSION['name'] = 0;
+    ?>
+    <a href="login.php" class="button" style="float:right;">Login</a>
+	<a href="shop.php" class="button" style="float:right;">Continue</a>
+    <h1 style="text-align:center;float:center;">Welcome to the PokeShop</h1>
 </body>
 
 </html>

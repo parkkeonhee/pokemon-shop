@@ -31,6 +31,8 @@
 	      Email address:<input type="text" name="emailAddress">
 	      <br>
 	      Phone number: <input type="text" name="phone"><!--10 digits only-->
+	      <br>
+	      <input type="submit" value="Submit">
       </form>
       
       <form action="" method="post">
@@ -44,6 +46,8 @@
       State: <input type="text" name="ship-usa-State">
       <br>
       Zip code: <input type="text" name="ship-zipCode">
+      <br>
+	      <input type="submit" value="Submit">
       </form>
       
       <h3>Billing address</h3>
@@ -57,10 +61,8 @@
       State: <input type="text" name="bill-usa-State">
       <br>
       Zip code: <input type="text" name="bill-zipCode">
-      </p>
       <input type="submit" value="Submit">
       </form>
-      
       <a href="login.php" class="button">Go back</a>
 </body>
 </html>

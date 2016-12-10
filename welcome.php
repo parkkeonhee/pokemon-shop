@@ -32,12 +32,10 @@
         </div>
     </div>
     
-    <!-- div: rest of the page 70% -->
+    <!-- div: rest of bottom page 70% -->
     <div>
-        <!-- left side panel-->
         <div>
-        </div>
-        <!-- BOTTOM-RIGHT-DIV table -->
+        <!-- BOTTOM-LEFT-DIV table -->
         <h4>Refine Search</h4>
         <form action="" method="post">
             Price range: <input type="number" name="search-min-price" min="0" max="1000" step="0.01">
@@ -48,6 +46,9 @@
             Browse Inventory by Name: <input type="search" name="search-name"/>
             <input type="submit" value="Submit">
         </form>
+        </div>
+        <!-- end of bottom left div table (refine search category) -->
+        <!-- start of bottom right div table (table pokemon category) -->
         <div>
             <table>
                 <tr>
@@ -62,7 +63,9 @@
                 <td>$24.70</td>
             </table>
         </div>
+        <!-- end of bottom right category -->
     </div>
+    <!-- end of bottom page category 70% -->
     
 </body>
 </html>

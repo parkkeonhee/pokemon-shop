@@ -17,18 +17,24 @@
 
 <body>
     
-    <h2>Change Account Information</h2>
-	  <form action="create-account2.php" method="post">
-	  Current password:<input type="text" name="passWord">
-      Password:<input type="text" name="passWord"><!--change type to password later-->
-      <br>
-      Confirm Password:<input type="text" name="confirmPassword"><!--change type to password later-->
-      <br>
-      Email address:<input type="text" name="emailAddress">
-      <br>
-      Phone number: <input type="text" name="phone"><!--10 digits only-->
+    <h2>Password Information</h2>
+	  <form action="" method="post">
+	      Password:<input type="text" name="passWord"><!--change type to password later-->
+	      <br>
+	      Confirm Password:<input type="text" name="confirmPassword"><!--change type to password later-->
+	      <br>
+	      <input type="submit" value="Submit">
+	  </form>
+	  
+	  <h2>Contact Information</h2>
+	  <form action="" method="post">
+	      Email address:<input type="text" name="emailAddress">
+	      <br>
+	      Phone number: <input type="text" name="phone"><!--10 digits only-->
+      </form>
       
-      <h3>Shipping address</h3>
+      <form action="" method="post">
+      <h2>Shipping address</h2>
       Street address: <input type="text" name="ship-streetAddress">
       <br>
       City: <input type="text" name="ship-city">
@@ -38,8 +44,10 @@
       State: <input type="text" name="ship-usa-State">
       <br>
       Zip code: <input type="text" name="ship-zipCode">
+      </form>
       
       <h3>Billing address</h3>
+      <form action="" method="post">
       Street address: <input type="text" name="bill-streetAddress">
       <br>
       City: <input type="text" name="bill-city">
@@ -52,6 +60,7 @@
       </p>
       <input type="submit" value="Submit">
       </form>
+      
       <a href="login.php" class="button">Go back</a>
 </body>
 </html>

@@ -15,6 +15,11 @@
 </head>
 
 <body>
+    <!--
+    This needs to dynamically change where
+    1. if user is logged in, it directs to account-change.php.
+    2. if user is not logged in, it directs to login.php.
+    -->
     <a href="account-change.php" class="button" style="float:right;">Account</a>
     <h1 style="text-align:center;float:center;">PokeShop</h1>
 </body>

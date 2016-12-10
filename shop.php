@@ -11,6 +11,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>Inventory</title>
+	<style>
+	.makehidden{
+	display: none;
+	}
+	</style>
 </head>
 
 <body>
@@ -49,7 +54,18 @@ if ($result1->num_rows > 0) {
 		 $price=$row["price"];
 		 $type=$row["type"];
 		 $stock=$row["stock"];
-		 echo "<div><img src= \"images/pokedex/".$img."\" alt=".$name.">".$name." ".$type." ".$price."</div>";
+		 
+		 
+		 echo '<form action="item-page.php" method="post">   
+		 <input name="id" class="makehidden" type="text" value="'.$id.'">
+		 <div><img src= "images/pokedex/'.$img.'" alt='.$name.'> '.$name.' '.$type.' '.$price.'
+		 <input type="submit" value="View"></div>
+		 </form>';
+		 
+		 
+
+		 
+
      }
 } else {
      echo "0 results";

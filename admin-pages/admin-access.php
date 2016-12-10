@@ -160,6 +160,13 @@ $conn->close();
 		<input type="submit" id="btn2" value="Submit">
 		</form>
 		
+		<form action="admin-update-product-description.php" method="post">
+		<h3>update product's description</h3>
+		<p>id: <input name="id" type="text"></p>
+		<p>description: <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+		<input type="submit" id="btn2" value="Submit">
+		</form>
+		
 		<form action="../login.php" method="post">
 		<h3>Logout </h3>
 		<input type="submit" id="btn2" value="Log Out">

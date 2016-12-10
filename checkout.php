@@ -97,7 +97,7 @@ if ($result0->num_rows > 0) {
 			</div>
 			<div id="display2">
 			</div>
-                Card number: <input type="number" onblur="start()" name="cardNumberCC"/>
+                Card number: <input type="number" onblur="start()" id="num" name="cardNumberCC"/>
                 <br>
                 Name on card: <input type="text" name="ownerNameCC"/>
                 <br>

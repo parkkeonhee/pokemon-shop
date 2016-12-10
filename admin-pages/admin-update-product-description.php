@@ -1,9 +1,15 @@
 <!doctype html>
+<!--
+    Created by Kenny Nguyen, Keon Hee Park, and Rashidat Akande
+    admin-update-product-description.php
+	Course: CSC 4370 - Web Programming
+	Instructor: Louis Henry
+	Date: December 12, 2016
+-->
+<html lang="en-US">
 
-<html>
-
-<head lang="en">
-	<meta charset="UTF-8">
+<head>
+    <meta charset="utf-8"/>
 	<title>to DB</title>
 </head>
 

@@ -1,5 +1,4 @@
 <!doctype html>
-
 <!--
     Created by Kenny Nguyen, Keon Hee Park, and Rashidat Akande
     login.php
@@ -7,11 +6,10 @@
 	Instructor: Louis Henry
 	Date: December 12, 2016
 -->
-
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Login Process Page</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>

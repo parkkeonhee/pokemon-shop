@@ -6,10 +6,10 @@
     Instructor: Louis Henry
     Date: December 12, 2016
 -->
-
 <html lang="en-US">
+
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <title>Change Account Information</title>
     <link rel="stylesheet" type="text/css" href="../css/createAcc.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />

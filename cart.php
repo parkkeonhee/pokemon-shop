@@ -6,7 +6,6 @@
 	Instructor: Louis Henry
 	Date: December 12, 2016
 -->
-
 <html lang="en-US">
 
 <head>

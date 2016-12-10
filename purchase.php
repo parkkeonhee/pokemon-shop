@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-	<title>Create Account 2</title>
+	<title>Purchase</title>
 </head>
 
 <body>

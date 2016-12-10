@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Admin Access Page</title>
+    <title>Admin: Access</title>
 </head>
 
 <body>

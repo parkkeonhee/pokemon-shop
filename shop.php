@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Inventory</title>
+    <title>Shop</title>
 	<style>
 	.makehidden{
 	display: none;

@@ -6,11 +6,11 @@
     Instructor: Louis Henry
     Date: December 12, 2016
 -->
-<html>
+<html lang="en-US">
 
-<head lang="en">
-	<meta charset="utf-8">
-	<title>to DB</title>
+<head>
+    <meta charset="utf-8"/>
+	<title>Add to Cart</title>
 
 </head>
 

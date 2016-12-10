@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-	<title>to DB</title>
+	<title>Admin: Change Password</title>
 </head>
 
 <body>

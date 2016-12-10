@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>User Login Page</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 

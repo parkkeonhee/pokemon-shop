@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Confirmation Page</title>
+    <title>Order Confirmation</title>
 </head>
 
 <body>

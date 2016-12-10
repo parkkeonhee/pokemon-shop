@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Item Page</title>
+    <title>Account</title>
 	<style>
 	.makehidden{
 	display: none;

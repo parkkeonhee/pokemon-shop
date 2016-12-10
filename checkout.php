@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Check Out</title>
+    <title>Checkout</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 	  <script type="text/javascript" src="card.js">
 	  </script>

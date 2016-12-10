@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <title>Login Process Page</title>
+    <title>Login Process</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 

@@ -7,7 +7,6 @@
 	Date: December 12, 2016
 -->
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8"/>
     <title>Home Page</title>
@@ -22,9 +21,48 @@
 		session_start();
 		$_SESSION['name'] = 0;
     ?>
-    <a href="login.php" class="button" style="float:right;">Login</a>
-	<a href="shop.php" class="button" style="float:right;">Continue</a>
-    <h1 style="text-align:center;float:center;">Welcome to the PokeShop</h1>
+    <!-- top div 30%-->
+    <div>
+        <div class="one">
+            <a href="login.php" class="button">Cart</a>
+            <a href="shop.php" class="button">Account</a>
+        </div>
+        <div class="two">
+            <img src="images/pokestop.png" alt="pokestop"/>
+        </div>
+    </div>
+    
+    <!-- div: rest of the page 70% -->
+    <div>
+        <!-- left side panel-->
+        <div>
+        </div>
+        <!-- BOTTOM-RIGHT-DIV table -->
+        <h4>Refine Search</h4>
+        <form action="" method="post">
+            Price range: <input type="number" name="search-min-price" min="0" max="1000" step="0.01">
+            to <input type="number" name="search-max-price" min="0" max="1000" step="0.01">
+            <input type="submit" value="Submit">
+        </form>
+        <form action="" method="post">
+            Browse Inventory by Name: <input type="search" name="search-name"/>
+            <input type="submit" value="Submit">
+        </form>
+        <div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+                <td>001</td>
+                <td>IMAGE HERE</td>
+                <td>Bulbasaur</td>
+                <td>$24.70</td>
+            </table>
+        </div>
+    </div>
+    
 </body>
-
 </html>

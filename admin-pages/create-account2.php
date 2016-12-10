@@ -1,15 +1,9 @@
 <!doctype html>
-<!--
-    Created by Kenny Nguyen, Keon Hee Park, and Rashidat Akande
-    create-account2.php
-	Course: CSC 4370 - Web Programming
-	Instructor: Louis Henry
-	Date: December 12, 2016
--->
+
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8"/>
+	<meta charset="utf-8"/>
 	<title>Create Account 2</title>
 </head>
 

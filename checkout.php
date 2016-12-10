@@ -24,7 +24,7 @@
             
             <h3>3. Payment Method</h3>
             <form action="" method="post">
-                Card number: <input type="number" name=""/>
+                Card number: <input type="number" name="cardNumberCC"/>
                 <br>
                 Name on card: <input type="text" name="ownerNameCC"/>
                 <br>

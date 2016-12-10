@@ -29,6 +29,8 @@ if($user===0)
 }else{
 	echo $user;
 }
+echo '<a href="account.php"><input type="button" id="btn1" value="account"></a>';
+
 
 $servername = "localhost";
 $username = "knguyen74";

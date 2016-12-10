@@ -16,51 +16,91 @@
 </head>
 
 <body>
-    
-    <h2>Password Information</h2>
-	  <form action="" method="post">
-	      Password:<input type="text" name="passWord"><!--change type to password later-->
-	      <br>
-	      Confirm Password:<input type="text" name="confirmPassword"><!--change type to password later-->
-	      <br>
-	      <input type="submit" value="Submit">
-	  </form>
-	  
-	  <h2>Contact Information</h2>
-	  <form action="" method="post">
-	      Email address:<input type="text" name="emailAddress">
-	      <br>
-	      Phone number: <input type="text" name="phone"><!--10 digits only-->
-      </form>
+    <?php
+	
+	session_start();
+	$user = $_SESSION['name'];
+
+	$servername = "localhost";
+	$username = "knguyen74";
+	$password = "knguyen74";
+	$dbname = "knguyen74";
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	if ($conn->connect_error) {
+		 die("Connection failed: " . $conn->connect_error);
+	} 
+	
+	
+$sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
+$result0 = $conn->query($sql0);
+echo "<h3>ACCOUNTS</h3>";
+if ($result0->num_rows > 0) {
+     // output data of each row
+     while($row = $result0->fetch_assoc()) {
+
+		 $username=$row["username"];
+		 $password=$row["password"];
+		 $admin=$row["admin"];
+		 $fname=$row["fname"];
+		 $lname=$row["lname"];
+		 $email=$row["email"];
+		 $phone=$row["phone"];
+		 $sadd=$row["sadd"];
+		 $scity=$row["scity"];
+		 $scounty=$row["scounty"];
+		 $sstate=$row["sstate"];
+		 $szip=$row["szip"];
+		 $badd=$row["badd"];
+		 $bcity=$row["bcity"];
+		 $bcounty=$row["bcounty"];
+		 $bstate=$row["bstate"];
+		 $bzip=$row["bzip"];
+
+		
+		echo	"<h2>Password Information</h2>";
+		echo  "<form action=\"update-account.php\" method=\"post\">";
+		echo	"Password:<input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";
+		echo	  "<br>";
+		echo	  "Confirm Password:<input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
+		echo	  "<br>";
+		  
+		echo  "<h2>Contact Information</h2>";
+		echo	  "Email address:<input type=\"text\" name=\"emailAddress\" value=\"".$email."\">";
+		echo	  "<br>";
+		echo	  "Phone number: <input type=\"text\" name=\"phone\" value=\"".$phone."\"><!--10 digits only-->";
+		  
+		echo  "<h2>Shipping address</h2>";
+		echo  "Street address: <input type=\"text\" name=\"ship-streetAddress\" value=\"".$sadd."\">";
+		echo  "<br>";
+		echo  "City: <input type=\"text\" name=\"ship-city\" value=\"".$scity."\">";
+		echo  "<br>";
+		echo  "County: <input type=\"text\" name=\"ship-county\" value=\"".$scounty."\">";
+		echo  "<br>";
+		echo  "State: <input type=\"text\" name=\"ship-usa-State\" value=\"".$sstate."\">";
+		echo  "<br>";
+		echo  "Zip code: <input type=\"text\" name=\"ship-zipCode\" value=\"".$szip."\">";
+		  
+		echo  "<h3>Billing address</h3>";
+		echo  "Street address: <input type=\"text\" name=\"bill-streetAddress\" value=\"".$badd."\">";
+		echo  "<br>";
+		echo  "City: <input type=\"text\" name=\"bill-city\" value=\"".$bcity."\">";
+		echo  "<br>";
+		echo  "County: <input type=\"text\" name=\"bill-county\" value=\"".$bcounty."\">";
+		echo  "<br>";
+		echo  "State: <input type=\"text\" name=\"bill-usa-State\" value=\"".$bstate."\">";
+		echo  "<br>";
+		echo  "Zip code: <input type=\"text\" name=\"bill-zipCode\" value=\"".$bzip."\">";
+		echo  "</p>";
+		echo  "<input type=\"submit\" value=\"Submit\">";
+		echo  "</form>";
+
+     }
+} else {
+     echo "0 results";
+}
+	?>
       
-      <form action="" method="post">
-      <h2>Shipping address</h2>
-      Street address: <input type="text" name="ship-streetAddress">
-      <br>
-      City: <input type="text" name="ship-city">
-      <br>
-      County: <input type="text" name="ship-county">
-      <br>
-      State: <input type="text" name="ship-usa-State">
-      <br>
-      Zip code: <input type="text" name="ship-zipCode">
-      </form>
-      
-      <h3>Billing address</h3>
-      <form action="" method="post">
-      Street address: <input type="text" name="bill-streetAddress">
-      <br>
-      City: <input type="text" name="bill-city">
-      <br>
-      County: <input type="text" name="bill-county">
-      <br>
-      State: <input type="text" name="bill-usa-State">
-      <br>
-      Zip code: <input type="text" name="bill-zipCode">
-      </p>
-      <input type="submit" value="Submit">
-      </form>
-      
-      <a href="login.php" class="button">Go back</a>
+	  <a href="account.php"><input type="button" id="btn1" value="Back"></a>
+
 </body>
 </html>

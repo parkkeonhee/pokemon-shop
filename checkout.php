@@ -29,7 +29,6 @@
                 Name on card: <input type="text" name="ownerNameCC"/>
                 <br>
                 Expiration date:
-                <br>
                 Month:
                 <select name="expirationMonthCC">
                     <option value="1">January</option>
@@ -54,8 +53,6 @@
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                 </select>
-                <br>
-                Year: <input type="" name="expireYearCC"/>
             </form>
             
             

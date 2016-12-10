@@ -6,34 +6,6 @@
 	Date: December 12, 2016
 */
 
-.center {
-    float: right;
-    position: relative;
-    left: -30%;
-    text-align: left;
-}
-
-section {
-    width: 80%;
-    height: 200px;
-    background: aqua;
-    margin: auto;
-    padding: 10px;
-}
-
-.one {
-    width: 15%;
-    height: 200px;
-    background: red;
-    float: left;
-}
-
-.two {
-    margin-left: 15%;
-    height: 200px;
-    background: black;
-}
-
 .button {
     background-color: #4CAF50;
     border: none;

@@ -95,7 +95,7 @@ $result2 = $conn->query($sql2);
 echo "<h3>items</h3>";
 if ($result2->num_rows > 0) {
      // output data of each row
-	echo "<table><tr><th>id</th><th>number</th><th>username</th><th>type</th><th>date</th><th>date</th>ordernum</tr>";
+	echo "<table><tr><th>id</th><th>number</th><th>username</th><th>type</th><th>date</th><th>ordernum</th></tr>";
      while($row = $result2->fetch_assoc()) {
 
 		 $id=$row["id"];

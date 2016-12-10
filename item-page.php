@@ -11,6 +11,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>Item Page</title>
+	<style>
+	.makehidden{
+	display: none;
+	}
+	</style>
 </head>
 
 <body>
@@ -51,7 +56,11 @@ if ($result1->num_rows > 0) {
 		 echo $description.'<br>';
 		 echo '$'.$price.'<br>';
 		 echo $stock.' in stock<br>';
-		 echo 'add to cart button goes here<br>';
+		echo  "<form action=\"add-to-cart.php\" method=\"post\">";
+		echo '<input name="id" class="makehidden" type="text" value="'.$id.'">';
+		 echo '<p>Amount: <input name="number" type="number" min="1" value="1"></p><br>';
+		 echo  "<input type=\"submit\" value=\"Add to cart\">";
+		 echo '</form>';
 		 echo '<a href="shop.php"><input type="button" id="btn1" value="Back"></a>';
      }
 } else {

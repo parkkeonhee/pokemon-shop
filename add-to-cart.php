@@ -9,7 +9,7 @@
 <html>
 
 <head lang="en">
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<title>to DB</title>
 
 </head>

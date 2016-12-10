@@ -35,6 +35,18 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+$fname="";
+$lname="";
+
+$sql = "SELECT fname, lname from accounts WHERE
+username = '$user'";
+if ($conn->query($sql) === TRUE) {
+		$fname=$row["fname"];
+		$lname=$row["lname"];
+} else {
+}
+
+
 $sql = "DELETE from accounts WHERE
 username = '$user'";
 if ($conn->query($sql) === TRUE) {

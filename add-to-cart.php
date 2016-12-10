@@ -19,7 +19,6 @@
 <?php
 	session_start();
 	$user = $_SESSION['name'];
-$user = $_SESSION['name'];
 if($user===0)
 {
 	echo '<a href="login.php"><input type="button" id="btn1" value="Log in"></a>';

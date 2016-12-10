@@ -42,30 +42,71 @@ $result2 = $conn->query($sql);
 echo "<h3>items</h3>";
 if ($result2->num_rows > 0) {
      // output data of each row
-	 echo "<table><tr><th>id</th><th>number</th><th>price</th><th>Remove</th></tr>";
+	 echo "<table><tr><th>Name</th><th>number</th><th>price</th><th>Remove</th></tr>";
      while($row = $result2->fetch_assoc()) {
 
 		 $id=$row["id"];
 		 $number=$row["number"];
 		 $price=0;
+		 $name="";
+
 		 
-		 
-		$sql1 = "SELECT price FROM products WHERE id='$id'";
+		$sql1 = "SELECT name, price FROM products WHERE id='$id'";
 		$result1 = $conn->query($sql1);
 		if ($result1->num_rows > 0) {
 			 // output data of each row
 			 while($row = $result1->fetch_assoc()) {
+				 $name=$row["name"];
 				 $price=$row["price"];
 			 }
 		} else {
 		}		 
 		 $total=$price*$number;
-         echo "<tr><td>".$id."</td><td>".$number."</td><td>".$total."</td><td><form action=\"remove-from-cart.php\" method=\"post\"><input name=\"id\" class=\"makehidden\" type=\"text\" value=\"".$id."\"><input type=submit value=\"Delete\"></form></td></tr>";
+         echo "<tr><td>".$name."</td><td>".$number."</td><td>".$total."</td><td><form action=\"remove-from-cart.php\" method=\"post\"><input name=\"id\" class=\"makehidden\" type=\"text\" value=\"".$id."\"><input type=submit value=\"Delete\"></form></td></tr>";
      }
 	 echo "</table>";
 } else {
      echo "Cart is empty";
 }
+
+
+
+
+$sql = 'SELECT id, number, date, ordernum FROM items WHERE username="'.$user.'" AND type="P" ORDER BY date DESC';
+$result2 = $conn->query($sql);
+echo "<h3>Purchases</h3>";
+if ($result2->num_rows > 0) {
+     // output data of each row
+	 echo "<table><tr><th>Name</th><th>number</th><th>price</th><th>Date</th><th>Order Number</th></tr>";
+     while($row = $result2->fetch_assoc()) {
+
+		 $id=$row["id"];
+		 $number=$row["number"];
+		 $date=$row["date"];
+		 $ordernum=$row["ordernum"];
+		 
+		 $price=0;
+		 $name="";
+
+		 
+		$sql1 = "SELECT name, price FROM products WHERE id='$id'";
+		$result1 = $conn->query($sql1);
+		if ($result1->num_rows > 0) {
+			 // output data of each row
+			 while($row = $result1->fetch_assoc()) {
+				 $name=$row["name"];
+				 $price=$row["price"];
+			 }
+		} else {
+		}		 
+		 $total=$price*$number;
+         echo "<tr><td>".$name."</td><td>".$number."</td><td>".$total."</td><td>".$date."</td><td>".$time."</td></tr>";
+     }
+	 echo "</table>";
+} else {
+     echo "No purchases<br>";
+}
+
 
 
 $conn->close();

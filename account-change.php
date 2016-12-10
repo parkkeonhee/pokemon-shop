@@ -10,21 +10,16 @@
 <html lang="en-US">
 <head>
      <meta charset="utf-8">
-    <title>Create Account</title>
+    <title>Change Account Information</title>
     <link rel="stylesheet" type="text/css" href="../css/createAcc.css" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <body>
     
-    <h2>Create Account</h2>
+    <h2>Change Account Information</h2>
 	  <form action="create-account2.php" method="post">
-      First name:<input type="text" name="firstName">
-      <br>
-      Last name:<input type="text" name="lastName">
-      <br>
-      Username:<input type="text" name="userName">
-      <br>
+	  Current password:<input type="text" name="passWord">
       Password:<input type="text" name="passWord"><!--change type to password later-->
       <br>
       Confirm Password:<input type="text" name="confirmPassword"><!--change type to password later-->
@@ -57,6 +52,6 @@
       </p>
       <input type="submit" value="Submit">
       </form>
-      <a href="../login.php" class="button">Go back</a>
+      <a href="login.php" class="button">Go back</a>
 </body>
 </html>

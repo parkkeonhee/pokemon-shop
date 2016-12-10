@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <a href="login.php" class="button" style="float:right;">Logout</a>
+    <a href="account-change.php" class="button" style="float:right;">Account</a>
     <h1 style="text-align:center;float:center;">PokeShop</h1>
 </body>
 

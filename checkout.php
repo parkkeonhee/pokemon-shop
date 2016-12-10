@@ -11,6 +11,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Check Out</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
@@ -67,6 +68,9 @@
             <p>Free Shipping & Handling:</p>
             <p>Order total:</p>
             
+            <form>
+                <input type="submit" value="Place your order" name="placeOrder" class="button" />
+            </form>
             <a href="account.php" class="button">Go back</a>
         </div>
     </div>

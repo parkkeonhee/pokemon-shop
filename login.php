@@ -14,11 +14,11 @@
 </head>
 
 <body class="pokemon-bg">
-<?php
-session_start();
-session_unset(); 
-session_destroy(); 
-?>
+    <?php
+        session_start();
+        session_unset();
+        session_destroy();
+    ?>
     <div class="center">
         <img src="images/pokemon-logo.jpg" alt="pokemon logo" />
 		<form action="login2.php" method="post">

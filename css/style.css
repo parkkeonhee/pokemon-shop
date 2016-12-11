@@ -55,13 +55,19 @@ body {
 }
 label{
   display: inline-block;
-  width: 150px;
+  width: 140px;
   text-align: right;
 }
 h2,h3{
     
     text-align: center;
 }
-div{
+/*div{
     text-align: center;
+}*/
+.sub{
+    text-align: center; 
+}
+a{
+    text-align: center; 
 }

@@ -91,8 +91,8 @@
 					}
 				}
 			} else {
+				echo "<div class='center'>"
 				echo "<h1>Username not found</h1>";
-				echo "<br>";
 				echo '<a href="login.php">
 						<input type="button" id="btn1" value="OK" class="button">
 					</a>';

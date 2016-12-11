@@ -58,6 +58,7 @@ if ($result1->num_rows > 0) {
 		 echo $stock.' in stock<br>';
 		echo  "<form action=\"add-to-cart.php\" method=\"post\">";
 		echo '<input name="id" class="makehidden" type="text" value="'.$id.'">';
+		echo '<input name="stock" class="makehidden" type="text" value="'.$stock.'">';
 		 echo '<p>Amount: <input name="number" type="number" min="1" value="1"></p><br>';
 		 echo  "<input type=\"submit\" value=\"Add to cart\">";
 		 echo '</form>';

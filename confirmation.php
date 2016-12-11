@@ -64,7 +64,33 @@ if ($conn->query($sql) === TRUE) {
 } else {
 }
 
+$sql = "SELECT id, number FROM items WHERE ordernum=\"".$ordernum."\"";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
 
+	$id=$row["id"];
+	$number=$row["number"];
+
+	$sql1 = "SELECT stock FROM products WHERE id=\"".$id."\"";
+	$result1 = $conn->query($sql1);
+if ($result1->num_rows > 0) {
+	while($row = $result1->fetch_assoc()) {
+		$stock=$row["stock"];
+		$newnum=$stock-$number;
+		echo $newnum.'<br>';
+			$sql2 = "UPDATE products SET stock = \"".$newnum."\" WHERE id=\"".$id."\"";
+			if ($conn->query($sql2) === TRUE) 
+			{
+			} else 
+			{
+			}	
+	}} else 
+	{
+	}	
+
+}} else {
+}
 
 
 

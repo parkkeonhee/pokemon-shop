@@ -167,6 +167,11 @@ $conn->close();
 			<input type="submit" id="btn2" value="Submit">
 		</form>
 		
+		<form action="reset-item-table.php" method="post">
+			<h3>Clean Item Table</h3>
+			<input type="submit" id="btn2" value="Submit">
+		</form>
+		
 		<form action="../login.php" method="post">
 			<h3>Logout </h3>
 			<input type="submit" id="btn2" value="Log Out">

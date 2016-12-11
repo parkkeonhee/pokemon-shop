@@ -61,6 +61,7 @@ label{
 h2,h3{
     
     text-align: center;
+    
 }
 div{
     text-align: center;
@@ -72,4 +73,8 @@ div{
 .go{
     text-align: center; 
     margin-left: 120px;
+}
+.block{
+    border: solid black 5px;
+    
 }

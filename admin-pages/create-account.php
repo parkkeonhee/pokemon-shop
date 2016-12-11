@@ -20,6 +20,7 @@
     <h2>Create Account</h2>
       
 	  <form action="create-account2.php" method="post">
+	        <div class="block">
 	      <div>
       <label>First name:</label>
       <input type="text" name="firstName">
@@ -82,6 +83,7 @@
        <a href="../login.php">
       <input id="sub" type="button" value="Submit" class="button">
       </a>
+      </div>
       </div>
       </form>
       <div class="go">

@@ -21,8 +21,14 @@
             session_start();
             $_SESSION['name'] = 0;
         ?>
-        <h1>Welcome to the PokeShop</h1>
-        <a href="login.php"><input type="button" id="btn1" value="Login" class="button"></a>
-        <a href="shop.php"><input type="button" id="btn1" value="Homepage" class="button"></a>
+        
+        <div class="center">
+            <img src="images/pokestop.png" alt="pokestop"/>
+        </div>
+        <div class="center">
+            <a href="login.php"><input type="button" id="btn1" value="Login" class="button"></a>
+            <br/>
+            <a href="shop.php"><input type="button" id="btn1" value="Homepage" class="button"></a>
+        </div>
     </body>
 </html>

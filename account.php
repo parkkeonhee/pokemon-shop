@@ -122,7 +122,7 @@
 				echo '<br>';
 				echo '<a href="shop.php"><input type="button" id="btn2" value="Back" class="button"></a>';
 				echo '<a href="welcome.php" class="button">Logout</a>';
-				echo '</div>'
+				echo '</div>';
 			}
 		?>
 	</body>

@@ -60,30 +60,43 @@
 			
 			if ($result0->num_rows > 0) {
 				while($row = $result0->fetch_assoc()) {
+					echo '<div style="center">';
 					if($password==$row["password"]){
-						echo 'You have successfully logged in.';
+						echo '<h1>You have successfully logged in.</h1>';
 						echo "<br>";
 						if($row["admin"]=="Y"){
 							//admin page
-							echo '<a href="admin-pages/admin-access.php"><input type="button" id="btn1" value="OK" class="button"></a>';
+							echo '<a href="admin-pages/admin-access.php">
+									<input type="button" id="btn1" value="OK" class="button">
+									</a>';
+							echo '</div>';
 							session_start();
 							$_SESSION['name'] = $userName;
 						} else {
 							//customer page
-							echo '<a href="shop.php"><input type="button" id="btn1" value="OK" class="button"></a>';
+							echo '<a href="shop.php">
+									<input type="button" id="btn1" value="OK" class="button">
+								</a>';
+							echo '</div>';
 							session_start();
 							$_SESSION['name'] = $userName;
 						}
 					} else {
-						echo "Password is incorrect";
+						echo "<h1>Password is incorrect</h1>";
 						echo "<br>";
-						echo '<a href="login.php"><input type="button" id="btn1" value="OK" class="button"></a>';
+						echo '<a href="login.php">
+								<input type="button" id="btn1" value="OK" class="button">
+							</a>';
+						echo '</div>';
 					}
 				}
 			} else {
-				echo "Username not found";
+				echo "<h1>Username not found</h1>";
 				echo "<br>";
-				echo '<a href="login.php"><input type="button" id="btn1" value="OK" class="button"></a>';
+				echo '<a href="login.php">
+						<input type="button" id="btn1" value="OK" class="button">
+					</a>';
+				echo '</div>';
 			}
 			$conn->close();
 		?>

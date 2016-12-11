@@ -7,35 +7,35 @@
 	Date: December 12, 2016
 -->
 <html lang="en-US">
-<head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="../css/style.css" />
-	<link rel="icon" type="image/x-icon" href="../css/images/pokeball.ico" />
-	<title>Admin: Access</title>
-</head>
-<body>
-	<?php
-		session_start();
-		$user = $_SESSION['name'];
-		echo $user;
-		
-		$servername = "localhost";
-		$username = "knguyen74";
-		$password = "knguyen74";
-		$dbname = "knguyen74";
-		$conn = mysqli_connect($servername, $username, $password, $dbname);
-		if ($conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-		}
-		
-		$sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts";
-		$result0 = $conn->query($sql0);
-		echo "<h3>ACCOUNTS</h3>";
-		
-		if ($result0->num_rows > 0) {
-			// output data of each row
-			echo "<table><tr><th>username</th><th>password</th><th>admin</th><th>fname</th><th>lname</th><th>email</th><th>phone</th><th>sadd</th><th>scity</th><th>scounty</th><th>sstate</th><th>szip</th><th>badd</th><th>bcity</th><th>bcounty</th><th>bstate</th><th>bzip</th></tr>";
-			while($row = $result0->fetch_assoc()) {
+	<head>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="icon" type="image/x-icon" href="../css/images/pokeball.ico"/>
+		<title>Admin: Access</title>
+	</head>
+	<body>
+		<?php
+			session_start();
+			$user = $_SESSION['name'];
+			echo $user;
+			$servername = "localhost";
+			$username = "knguyen74";
+			$password = "knguyen74";
+			$dbname = "knguyen74";
+			
+			$conn = mysqli_connect($servername, $username, $password, $dbname);
+			if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+			}
+			
+			$sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts";
+			$result0 = $conn->query($sql0);
+			echo "<h3>ACCOUNTS</h3>";
+			
+			if ($result0->num_rows > 0) {
+				// output data of each row
+				echo "<table><tr><th>username</th><th>password</th><th>admin</th><th>fname</th><th>lname</th><th>email</th><th>phone</th><th>sadd</th><th>scity</th><th>scounty</th><th>sstate</th><th>szip</th><th>badd</th><th>bcity</th><th>bcounty</th><th>bstate</th><th>bzip</th></tr>";
+				while($row = $result0->fetch_assoc()) {
 				$username=$row["username"];
 				$password=$row["password"];
 				$admin=$row["admin"];

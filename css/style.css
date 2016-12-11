@@ -62,12 +62,14 @@ h2,h3{
     
     text-align: center;
 }
-/*div{
+div{
     text-align: center;
-}*/
-.sub{
-    text-align: center; 
 }
-a{
+#sub{
     text-align: center; 
+    margin-left: 120px;
+}
+.go{
+    text-align: center; 
+    margin-left: 120px;
 }

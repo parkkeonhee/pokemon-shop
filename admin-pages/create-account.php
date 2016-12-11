@@ -78,8 +78,14 @@
       <input type="text" name="bill-zipCode">
       </div>
       <br>
-      <input class="submit" type="submit" value="Submit">
+      <div class="sub">
+       <a href="../login.php">
+      <input id="sub" type="button" value="Submit" class="button">
+      </a>
+      </div>
       </form>
+      <div class="go">
       <a href="../login.php" class="button">Go back</a>
+      </div>
 </body>
 </html>

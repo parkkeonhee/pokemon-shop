@@ -7,73 +7,58 @@
 	Date: December 12, 2016
 -->
 <html lang="en-US">
-
-<head>
-    <meta charset="utf-8"/>
-    <title>Shop</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
-</head>
-
-<body>
-
-<?php
-
-session_start();
-$user = $_SESSION['name'];
-if($user===0)
-{
-}else{
-	echo $user;
-}
-echo '<a href="account.php"><input type="button" id="btn1" value="account"></a>';
-
-
-$servername = "localhost";
-$username = "knguyen74";
-$password = "knguyen74";
-$dbname = "knguyen74";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-     die("Connection failed: " . $conn->connect_error);
-} 
-
-
-$sql1 = "SELECT id, name, description, img, price, type, stock  FROM products";
-$result1 = $conn->query($sql1);
-echo "<h3>PRODUCTS</h3>";
-if ($result1->num_rows > 0) {
-     // output data of each row
-     while($row = $result1->fetch_assoc()) {
-
-		 $id=$row["id"];
-		 $name=$row["name"];
-		 $description=$row["description"];
-		 $img=$row["img"];
-		 $price=$row["price"];
-		 $type=$row["type"];
-		 $stock=$row["stock"];
-		 
-		 
-		 echo '<form action="item-page.php" method="post">   
-		 <input name="id" class="makehidden" type="text" value="'.$id.'">
-		 <div><img src= "images/pokedex/'.$img.'" alt='.$name.'> '.$name.' '.$type.' '.$price.'
-		 <input type="submit" class="button" value="View"></div>
-		 </form>';
-		 
-		 
-
-		 
-
-     }
-} else {
-     echo "0 results";
-}
-
-$conn->close();
-?>
-<<<<<<< HEAD
-=======
+    <head>
+        <meta charset="utf-8"/>
+        <title>Shop</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
+    </head>
+    <body>
+        <?php
+            session_start();
+            $user = $_SESSION['name'];
+            if($user===0) {
+                
+            }else{
+                echo $user;
+            }
+            echo '<a href="account.php"><input type="button" id="btn1" value="account"></a>';
+            
+            $servername = "localhost";
+            $username = "knguyen74";
+            $password = "knguyen74";
+            $dbname = "knguyen74";
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
+            
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            $sql1 = "SELECT id, name, description, img, price, type, stock  FROM products";
+            $result1 = $conn->query($sql1);
+            echo "<h3>PRODUCTS</h3>";
+            
+            if ($result1->num_rows > 0) {
+                // output data of each row
+                while($row = $result1->fetch_assoc()) {
+                    $id=$row["id"];
+                    $name=$row["name"];
+                    $description=$row["description"];
+                    $img=$row["img"];
+                    $price=$row["price"];
+                    $type=$row["type"];
+                    $stock=$row["stock"];
+                    
+                    echo '<form action="item-page.php" method="post">
+                    <input name="id" class="makehidden" type="text" value="'.$id.'">
+                    <div><img src= "images/pokedex/'.$img.'" alt='.$name.'> '.$name.' '.$type.' '.$price.'
+                    <input type="submit" class="button" value="View"></div>
+                    </form>';
+                }
+            } else {
+                echo "0 results";
+            }
+            $conn->close();
+            ?>
 <!--
      top div 30%
     <div>

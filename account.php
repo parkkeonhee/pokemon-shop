@@ -36,7 +36,6 @@ if ($conn->connect_error) {
 } 
 echo $user.'<br>';
 
-
 $sql = 'SELECT id, number FROM items WHERE username="'.$user.'" AND type="C"';
 $result2 = $conn->query($sql);
 echo "<h3>items</h3>";
@@ -44,12 +43,10 @@ if ($result2->num_rows > 0) {
      // output data of each row
 	 echo "<table><tr><th>Name</th><th>number</th><th>price</th><th>Remove</th></tr>";
      while($row = $result2->fetch_assoc()) {
-
 		 $id=$row["id"];
 		 $number=$row["number"];
 		 $price=0;
 		 $name="";
-
 		 
 		$sql1 = "SELECT name, price FROM products WHERE id='$id'";
 		$result1 = $conn->query($sql1);
@@ -69,9 +66,6 @@ if ($result2->num_rows > 0) {
      echo "Cart is empty";
 }
 
-
-
-
 $sql = 'SELECT id, number, date, ordernum FROM items WHERE username="'.$user.'" AND type="P" ORDER BY date DESC';
 $result2 = $conn->query($sql);
 echo "<h3>Purchases</h3>";
@@ -87,7 +81,6 @@ if ($result2->num_rows > 0) {
 		 
 		 $price=0;
 		 $name="";
-
 		 
 		$sql1 = "SELECT name, price FROM products WHERE id='$id'";
 		$result1 = $conn->query($sql1);
@@ -107,16 +100,8 @@ if ($result2->num_rows > 0) {
      echo "No purchases<br>";
 }
 
-
-
 $conn->close();
-	
-	
-	
-	
-	
-	
-	
+
 	echo '<a href="account-change.php"><input type="button" id="btn0" value="Change Info"></a>';
 	echo '<a href="checkout.php"><input type="button" id="btn1" value="Checkout"></a>';
 	echo '<a href="shop.php"><input type="button" id="btn2" value="Back"></a>';

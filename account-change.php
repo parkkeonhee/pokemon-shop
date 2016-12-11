@@ -7,7 +7,6 @@
     Date: December 12, 2016
 -->
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8"/>
     <title>Change Account Information</title>
@@ -15,9 +14,8 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
-<body>
+<body class="center">
     <?php
-	
 	session_start();
 	$user = $_SESSION['name'];
 
@@ -28,16 +26,13 @@
 	$conn = mysqli_connect($servername, $username, $password, $dbname);
 	if ($conn->connect_error) {
 		 die("Connection failed: " . $conn->connect_error);
-	} 
-	
-	
+	}
 $sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
 $result0 = $conn->query($sql0);
 echo "<h3>ACCOUNTS</h3>";
 if ($result0->num_rows > 0) {
      // output data of each row
      while($row = $result0->fetch_assoc()) {
-
 		 $username=$row["username"];
 		 $password=$row["password"];
 		 $admin=$row["admin"];
@@ -55,8 +50,7 @@ if ($result0->num_rows > 0) {
 		 $bcounty=$row["bcounty"];
 		 $bstate=$row["bstate"];
 		 $bzip=$row["bzip"];
-
-		
+		 
 		echo	"<h2>Password Information</h2>";
 		echo  "<form action=\"update-account.php\" method=\"post\">";
 		echo	"Password:<input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";
@@ -93,14 +87,11 @@ if ($result0->num_rows > 0) {
 		echo  "</p>";
 		echo  "<input type=\"submit\" value=\"Submit\">";
 		echo  "</form>";
-
      }
 } else {
      echo "0 results";
 }
 	?>
-      
 	  <a href="account.php"><input type="button" id="btn1" value="Back"></a>
-
 </body>
 </html>

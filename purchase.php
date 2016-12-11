@@ -11,7 +11,8 @@
 <head>
     <meta charset="utf-8"/>
 	<title>Purchase</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
 </head>
 
 <body>

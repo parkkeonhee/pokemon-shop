@@ -11,8 +11,9 @@
 <head>
     <meta charset="utf-8"/>
     <title>Checkout</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-	  <script type="text/javascript" src="card.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
+    <script type="text/javascript" src="card.js"></script>
 </head>
 
 <body>

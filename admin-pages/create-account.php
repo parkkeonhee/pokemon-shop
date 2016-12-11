@@ -11,7 +11,8 @@
 <head>
      <meta charset="utf-8">
     <title>Create Account</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="icon" type="image/x-icon" href="../css/images/pokeball.ico"/>
 </head>
 
 <body>
@@ -77,7 +78,7 @@
       <input type="text" name="bill-zipCode">
       </div>
       <br>
-      <input type="submit" value="Submit">
+      <input class="submit" type="submit" value="Submit">
       </form>
       <a href="../login.php" class="button">Go back</a>
 </body>

@@ -67,14 +67,14 @@ if ($result0->num_rows > 0) {
 			 if($row["admin"]=="Y")
 			 {
 				 //admin page
-				 echo '<a href="admin-pages/admin-access.php"><input type="button" id="btn1" value="OK"></a>';
+				 echo '<a href="admin-pages/admin-access.php"><input type="button" id="btn1" value="OK" class="button"></a>';
 				 session_start();
 				 $_SESSION['name'] = $userName;
 			 }
 			 else
 			 {
 				 //customer page
-				 echo '<a href="shop.php"><input type="button" id="btn1" value="OK"></a>';
+				 echo '<a href="shop.php"><input type="button" id="btn1" value="OK" class="button"></a>';
 				 session_start();
 				 $_SESSION['name'] = $userName;
 			 }
@@ -82,12 +82,12 @@ if ($result0->num_rows > 0) {
 		 else
 		 {
 			echo "Password is incorrect";
-			echo '<a href="login.php"><input type="button" id="btn1" value="OK"></a>';
+			echo '<a href="login.php"><input type="button" id="btn1" value="OK" class="button"></a>';
 		 }
      }
 } else {
      echo "Username not found";
-	 echo '<a href="login.php"><input type="button" id="btn1" value="OK"></a>';
+	 echo '<a href="login.php"><input type="button" id="btn1" value="OK" class="button"></a>';
 }
 
 

@@ -22,7 +22,7 @@
     ?>
     <div class="center">
         <img src="images/pokemon-logo.jpg" alt="pokemon logo" />
-		<form action="login2.php" method="post">
+        <form action="login2.php" method="post">
         <p>
             <h1>User Login</h1>
             Username: <input type="text" name="userName" value="Ash" />

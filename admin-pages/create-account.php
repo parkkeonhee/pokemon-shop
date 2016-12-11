@@ -17,8 +17,9 @@
 <body>
     
     <h2>Create Account</h2>
+      
 	  <form action="create-account2.php" method="post">
-      First name:<input type="text" name="firstName">
+      First name:<input class="left" type="text" name="firstName">
       <br>
       Last name:<input type="text" name="lastName">
       <br>

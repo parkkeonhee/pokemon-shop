@@ -40,7 +40,8 @@
     text-align: right;
 }
 
-html,body {
+html,
+body {
     height: 100%;
     background: #6CE6F6 no-repeat center center fixed;
     background: -webkit-linear-gradient(left top, #6CE6F6, #fff);
@@ -51,5 +52,15 @@ html,body {
 
 .makehidden {
     display: none;
-    
+}
+.left {
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+
+.right {
+    width: 30%;
+    margin-left: 10px;
+    float:left;
 }

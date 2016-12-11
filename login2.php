@@ -67,7 +67,7 @@
 						if($row["admin"]=="Y"){
 							//admin page
 							echo '<a href="admin-pages/admin-access.php">
-									<input type="button" id="btn1" value="OK" class="button">
+									<input type="button" id="btn1" value="Start Managing!" class="button">
 									</a>';
 							echo '</div>';
 							session_start();
@@ -75,7 +75,7 @@
 						} else {
 							//customer page
 							echo '<a href="shop.php">
-									<input type="button" id="btn1" value="OK" class="button">
+									<input type="button" id="btn1" value="Start Shopping!" class="button">
 								</a>';
 							echo '</div>';
 							session_start();
@@ -85,16 +85,16 @@
 						echo "<h1>Password is incorrect</h1>";
 						echo "<br>";
 						echo '<a href="login.php">
-								<input type="button" id="btn1" value="OK" class="button">
+								<input type="button" id="btn1" value="Try Again" class="button-orange">
 							</a>';
 						echo '</div>';
 					}
 				}
 			} else {
 				echo "<div class='center'>";
-				echo "<h1>Username not found</h1>";
+				echo "<h1>Username not found.</h1>";
 				echo '<a href="login.php">
-						<input type="button" id="btn1" value="OK" class="button">
+						<input type="button" id="btn1" value="Try Again" class="button-orange">
 					</a>';
 				echo '</div>';
 			}

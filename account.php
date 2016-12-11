@@ -20,7 +20,9 @@
 			
 			if($user===0)
 			{
-				echo '<a href="login.php"><input type="button" id="btn1" value="Log in"></a>';
+				echo '<a href="login.php">
+						<input type="button" id="btn1" value="Log in">
+						</a>';
 			}else{
 				$servername = "localhost";
 				$username = "knguyen74";
@@ -38,7 +40,13 @@
 				
 				if ($result2->num_rows > 0) {
 					// output data of each row
-					echo "<table><tr><th>Name</th><th>number</th><th>price</th><th>Remove</th></tr>";
+					echo "<table>
+							<tr>
+								<th>Name</th>
+								<th>number</th>
+								<th>price</th>
+								<th>Remove</th>
+							</tr>";
 					
 					while($row = $result2->fetch_assoc()) {
 						$id=$row["id"];
@@ -120,8 +128,8 @@
 				echo '<a href="account-change.php"><input type="button" id="btn0" value="Change Info" class="button"></a>';
 				echo '<a href="checkout.php"><input type="button" id="btn1" value="Checkout" class="button"></a>';
 				echo '<br>';
-				echo '<a href="shop.php"><input type="button" id="btn2" value="Back" class="button"></a>';
-				echo '<a href="welcome.php" class="button">Logout</a>';
+				echo '<a href="shop.php"><input type="button" id="btn2" value="Back" class="button-orange"></a>';
+				echo '<a href="welcome.php" class="button-orange">Logout</a>';
 				echo '</div>';
 			}
 		?>

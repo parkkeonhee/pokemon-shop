@@ -91,11 +91,11 @@ $conn->close();
         <form action="" method="post">
             Price range: <input type="number" name="search-min-price" min="0" max="1000" step="0.01">
             to <input type="number" name="search-max-price" min="0" max="1000" step="0.01">
-            <input type="submit" value="Submit">
+            <input type="submit" class="button" value="Submit"/>
         </form>
         <form action="" method="post">
             Browse Inventory by Name: <input type="search" name="search-name"/>
-            <input type="submit" value="Submit">
+            <input type="submit" class="button" value="Submit"/>
         </form>
         </div>
         <!-- end of bottom left div table (refine search category) -->

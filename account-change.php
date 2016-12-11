@@ -11,8 +11,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Change Account Information</title>
-    <link rel="stylesheet" type="text/css" href="../css/createAcc.css" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>

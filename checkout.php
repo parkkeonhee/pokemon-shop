@@ -12,8 +12,7 @@
     <meta charset="utf-8"/>
     <title>Checkout</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-	  <script type="text/javascript" src="card.js">
-	  </script>
+	  <script type="text/javascript" src="card.js"></script>
 </head>
 
 <body>
@@ -131,9 +130,6 @@ if ($result0->num_rows > 0) {
             <h3>Review Items and Shipping</h3>
             <!-- need php code here-->
 			<?php
-			
-
-
 		$servername = "localhost";
 		$username = "knguyen74";
 		$password = "knguyen74";

@@ -10,7 +10,7 @@
 
 <head>
     <meta charset="utf-8"/>
-	<title>Remove from Cart</title>
+	<title>Purchase</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
@@ -35,19 +35,41 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-$id=$_POST["id"];
 
-$sql = "DELETE from items WHERE
-username = '$user' AND id='$id' AND type='C'";
+
+date_default_timezone_set("America/New_York");
+
+
+$date=date("Y/m/d");
+$sql = "UPDATE items SET date = '$date' WHERE username = '$user' AND type='C'";
 if ($conn->query($sql) === TRUE) {
-	echo 'Item is removed';
 } else {
-	echo 'Error: Item failed to be removed';
 }
+
+$unique=false;
+while($unique==false)
+{
+	$ordernum=rand(100000);
+		$sql = "Select * FROM items WHERE ordernum = '$ordernum'";
+	if ($conn->query($sql) === TRUE) {
+	} else {
+			$unique=true;
+			$sql = "UPDATE items SET ordernum = '$ordernum' WHERE username = '$user' AND type='C'";
+		if ($conn->query($sql) === TRUE) {
+		} else {
+		}
+	}
+}
+
+$sql = "UPDATE items SET type = 'P' WHERE username = '$user' AND type='C'";
+if ($conn->query($sql) === TRUE) {
+} else {
+}
+*/
 
 $conn->close();
 ?>
-	<a href="account.php"><input type="button" id="btn1" value="OK"></a>
+	<a href="shop.php"><input type="button" id="btn1" value="Thank you for your purchase"></a>
 	</div>
 </body>
 

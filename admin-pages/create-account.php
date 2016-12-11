@@ -19,9 +19,19 @@
     <h2>Create Account</h2>
       
 	  <form action="create-account2.php" method="post">
-      First name:<input class="left" type="text" name="firstName">
+	      <table>
+	      <tr>
+     <td> First name:</td>
+      
+      <td>
+      <input type="text" name="firstName">
+      <!--<br>-->
+      </td>
+      </tr>
       <br>
-      Last name:<input type="text" name="lastName">
+      <tr>
+      Last name:<td><input type="text" name="lastName"></td>
+      </tr>
       <br>
       Username:<input type="text" name="userName">
       <br>
@@ -32,7 +42,7 @@
       Email address:<input type="text" name="emailAddress">
       <br>
       Phone number: <input type="text" name="phone"><!--10 digits only-->
-      
+      </table>
       <h3>Shipping address</h3>
       Street address: <input type="text" name="ship-streetAddress">
       <br>
@@ -54,9 +64,10 @@
       State: <input type="text" name="bill-usa-State">
       <br>
       Zip code: <input type="text" name="bill-zipCode">
-      </p>
+    
       <input type="submit" value="Submit">
       </form>
+      </table>
       <a href="../login.php" class="button">Go back</a>
 </body>
 </html>

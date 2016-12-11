@@ -113,9 +113,10 @@ $conn->close();
 	
 	
 	
-	echo '<a href="account-change.php"><input type="button" id="btn0" value="Change Info"></a>';
-	echo '<a href="checkout.php"><input type="button" id="btn1" value="Checkout"></a>';
-	echo '<a href="shop.php"><input type="button" id="btn2" value="Back"></a>';
+	echo '<a href="account-change.php"><input type="button" id="btn0" value="Change Info" class="button"></a>';
+	echo '<a href="checkout.php"><input type="button" id="btn1" value="Checkout" class="button"></a>';
+	echo '<a href="shop.php"><input type="button" id="btn2" value="Back" class="button"></a>';
+	echo '<a href="welcome.php" class="button">Logout</a>';
 }
 ?>
 

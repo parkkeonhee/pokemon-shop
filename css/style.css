@@ -40,7 +40,7 @@
     text-align: right;
 }
 
-html {
+html,body {
     height: 100%;
     background: #6CE6F6 no-repeat center center fixed;
     background: -webkit-linear-gradient(left top, #6CE6F6, #fff);

@@ -11,11 +11,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Shop</title>
-	<style>
-	.makehidden{
-	display: none;
-	}
-	</style>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 
 <body>

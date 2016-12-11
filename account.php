@@ -34,7 +34,7 @@
 				echo $user.'<br>';
 				$sql = 'SELECT id, number FROM items WHERE username="'.$user.'" AND type="C"';
 				$result2 = $conn->query($sql);
-				echo "<h3>items</h3>";
+				echo "<h2>Items</h2>";
 				
 				if ($result2->num_rows > 0) {
 					// output data of each row
@@ -68,11 +68,18 @@
 				
 				$sql = 'SELECT id, number, date, ordernum FROM items WHERE username="'.$user.'" AND type="P" ORDER BY date DESC';
 				$result2 = $conn->query($sql);
-				echo "<h3>Purchases</h3>";
+				echo "<h2>Purchases</h2>";
 				
 				if ($result2->num_rows > 0) {
 					// output data of each row
-					echo "<table><tr><th>Name</th><th>number</th><th>price</th><th>Date</th><th>Order Number</th></tr>";
+					echo "<table>
+							<tr>
+								<th>Name</th>
+								<th>number</th>
+								<th>price</th>
+								<th>Date</th>
+								<th>Order Number</th>
+							</tr>";
 					
 					while($row = $result2->fetch_assoc()) {
 						$id=$row["id"];
@@ -95,17 +102,27 @@
 							
 						}
 						$total=$price*$number;
-						echo "<tr><td>".$name."</td><td>".$number."</td><td>".$total."</td><td>".$date."</td><td>".$ordernum."</td></tr>";
+						echo 
+							"<tr>
+								<td>".$name."</td>
+								<td>".$number."</td>
+								<td>".$total."</td>
+								<td>".$date."</td>
+								<td>".$ordernum."</td>
+							</tr>";
 					}
 					echo "</table>";
 				} else {
 					echo "No purchases<br>";
 				}
 				$conn->close();
+				echo '<div class="center">';
 				echo '<a href="account-change.php"><input type="button" id="btn0" value="Change Info" class="button"></a>';
 				echo '<a href="checkout.php"><input type="button" id="btn1" value="Checkout" class="button"></a>';
+				echo '<br>';
 				echo '<a href="shop.php"><input type="button" id="btn2" value="Back" class="button"></a>';
 				echo '<a href="welcome.php" class="button">Logout</a>';
+				echo '</div>'
 			}
 		?>
 	</body>

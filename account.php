@@ -67,7 +67,17 @@
 							
 						}
 						$total=$price*$number;
-						echo "<tr><td>".$name."</td><td>".$number."</td><td>".$total."</td><td><form action=\"remove-from-cart.php\" method=\"post\"><input name=\"id\" class=\"makehidden\" type=\"text\" value=\"".$id."\"><input type=submit value=\"Delete\"></form></td></tr>";
+						echo "<tr>
+								<td>".$name."</td>
+								<td>".$number."</td>
+								<td>".$total."</td>
+								<td>
+									<form action=\"remove-from-cart.php\" method=\"post\">
+										<input name=\"id\" class=\"makehidden\" type=\"text\" value=\"".$id."\">
+										<input type=\"submit\" value=\"Delete\" class=\"button\">
+									</form>
+								</td>
+							</tr>";
 					}
 					echo "</table>";
 				} else {

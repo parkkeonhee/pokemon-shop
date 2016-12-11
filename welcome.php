@@ -9,7 +9,7 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8"/>
-        <title>Welcome</title>
+        <title>Logout Page</title>
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
     </head>
@@ -24,11 +24,15 @@
         
         <div class="center">
             <img src="images/pokestop.png" alt="pokestop"/>
+            <h1>You have successfully logged out!</h1>
         </div>
         <div class="center">
+            <!--
             <a href="login.php"><input type="button" id="btn1" value="Login" class="button"></a>
             <br/>
+            -->
             <a href="shop.php"><input type="button" id="btn1" value="Homepage" class="button-orange"></a>
         </div>
+        
     </body>
 </html>

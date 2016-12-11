@@ -81,7 +81,7 @@
 					}
 					echo "</table>";
 				} else {
-					echo "Cart is empty";
+					echo "Cart is empty.";
 				}
 				
 				$sql = 'SELECT id, number, date, ordernum FROM items WHERE username="'.$user.'" AND type="P" ORDER BY date DESC';

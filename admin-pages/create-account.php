@@ -81,13 +81,13 @@
       <br>
       <div class="sub">
        <a href="../login.php">
-      <input id="sub" type="button" value="Submit" class="button-orange">
+      <input id="sub" type="button" value="Submit" class="button">
       </a>
       </div>
       </div>
       </form>
       <div class="go">
-      <a href="../login.php" class="button">Go back</a>
+      <a href="../login.php" class="button-orange">Go back</a>
       </div>
 </body>
 </html>

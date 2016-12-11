@@ -64,6 +64,7 @@ if ($result0->num_rows > 0) {
 		 if($password==$row["password"])
 		 {
 			 echo 'You have successfully logged in.';
+			 echo "<br>";
 			 if($row["admin"]=="Y")
 			 {
 				 //admin page
@@ -82,11 +83,13 @@ if ($result0->num_rows > 0) {
 		 else
 		 {
 			echo "Password is incorrect";
+			echo "<br>";
 			echo '<a href="login.php"><input type="button" id="btn1" value="OK" class="button"></a>';
 		 }
      }
 } else {
      echo "Username not found";
+     echo "<br>";
 	 echo '<a href="login.php"><input type="button" id="btn1" value="OK" class="button"></a>';
 }
 

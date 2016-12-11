@@ -12,7 +12,7 @@
      <meta charset="utf-8">
     <title>Create Account</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-    <link rel="icon" type="image/x-icon" href="../css/images/pokeball.ico"/>
+    <link rel="icon" type="image/x-icon" href="../images/pokeball.ico"/>
 </head>
 
 <body>
@@ -81,7 +81,7 @@
       <br>
       <div class="sub">
        <a href="../login.php">
-      <input id="sub" type="button" value="Submit" class="button">
+      <input id="sub" type="button" value="Submit" class="button-orange">
       </a>
       </div>
       </div>

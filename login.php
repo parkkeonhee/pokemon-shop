@@ -30,7 +30,6 @@
                 </p>
                 <input type="submit" value="Login" name="submit" class="button" />
             </form>
-            <br>
             <a href="admin-pages/create-account.php" class="button-orange">Create an Account</a>
         </div>
     </body>

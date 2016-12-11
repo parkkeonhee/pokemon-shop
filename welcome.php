@@ -28,7 +28,7 @@
         <div class="center">
             <a href="login.php"><input type="button" id="btn1" value="Login" class="button"></a>
             <br/>
-            <a href="shop.php"><input type="button" id="btn1" value="Homepage" class="button"></a>
+            <a href="shop.php"><input type="button" id="btn1" value="Homepage" class="button-orange"></a>
         </div>
     </body>
 </html>

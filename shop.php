@@ -73,8 +73,8 @@ $conn->close();
 ?>
 <<<<<<< HEAD
 =======
-
-    <!-- top div 30%-->
+<!--
+     top div 30%
     <div>
         <div class="one">
             <a href="login.php" class="button">Cart</a>
@@ -85,10 +85,10 @@ $conn->close();
         </div>
     </div>
     
-    <!-- div: rest of bottom page 70% -->
+    div: rest of bottom page 70% 
     <div>
         <div>
-        <!-- BOTTOM-LEFT-DIV table -->
+        BOTTOM-LEFT-DIV table 
         <h4>Refine Search</h4>
         <form action="" method="post">
             Price range: <input type="number" name="search-min-price" min="0" max="1000" step="0.01">
@@ -100,8 +100,8 @@ $conn->close();
             <input type="submit" class="button" value="Submit"/>
         </form>
         </div>
-        <!-- end of bottom left div table (refine search category) -->
-        <!-- start of bottom right div table (table pokemon category) -->
+         end of bottom left div table (refine search category) 
+         start of bottom right div table (table pokemon category)
         <div>
             <table>
                 <tr>
@@ -116,11 +116,10 @@ $conn->close();
                 <td>$24.70</td>
             </table>
         </div>
-        <!-- end of bottom right category -->
+        end of bottom right category
     </div>
-    <!-- end of bottom page category 70% -->
->>>>>>> origin/master
-    
+     end of bottom page category 70%
+-->    
 </body>
 
 </html>

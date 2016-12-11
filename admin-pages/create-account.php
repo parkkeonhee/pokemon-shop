@@ -19,43 +19,64 @@
     <h2>Create Account</h2>
       
 	  <form action="create-account2.php" method="post">
-      First name:
+	      <div>
+      <label>First name:</label>
       <input type="text" name="firstName">
       <br>
-      Last name:<input type="text" name="lastName">
+      <label>Last name:</label>
+      <input type="text" name="lastName">
       <br>
-      Username:<input type="text" name="userName">
+      <label>Username:</label>
+      <input type="text" name="userName">
       <br>
-      Password:<input type="text" name="passWord"><!--change type to password later-->
+      <label>Password:</label>
+      <input type="text" name="passWord"><!--change type to password later-->
       <br>
-      Confirm Password:<input type="text" name="confirmPassword"><!--change type to password later-->
+      <label>Confirm Password:</label>
+      <input type="text" name="confirmPassword"><!--change type to password later-->
       <br>
-      Email address:<input type="text" name="emailAddress">
+      <label>Email address:</label>
+      <input type="text" name="emailAddress">
       <br>
-      Phone number: <input type="text" name="phone"><!--10 digits only-->
+      <label>Phone number:</label><input type="text" name="phone"><!--10 digits only-->
+      </div>
       
       <h3>Shipping address</h3>
-      Street address: <input type="text" name="ship-streetAddress">
+      <div>
+      <label>Street address:</label> 
+      <input type="text" name="ship-streetAddress">
       <br>
-      City: <input type="text" name="ship-city">
+     <label> City:</label> 
+     <input type="text" name="ship-city">
       <br>
-      County: <input type="text" name="ship-county">
+      <label>County:</label>
+      <input type="text" name="ship-county">
       <br>
-      State: <input type="text" name="ship-usa-State">
+      <label>State:</label> 
+      <input type="text" name="ship-usa-State">
       <br>
-      Zip code: <input type="text" name="ship-zipCode">
+      <label>Zip code:</label>
+      <input type="text" name="ship-zipCode">
+      </div>
       
       <h3>Billing address</h3>
-      Street address: <input type="text" name="bill-streetAddress">
+      <div>
+      <label>Street address:</label> 
+      <input type="text" name="bill-streetAddress">
       <br>
-      City: <input type="text" name="bill-city">
+      <label>City:</label>
+      <input type="text" name="bill-city">
       <br>
-      County: <input type="text" name="bill-county">
+      <label>County:</label> 
+      <input type="text" name="bill-county">
       <br>
-      State: <input type="text" name="bill-usa-State">
+      <label>State:</label> 
+      <input type="text" name="bill-usa-State">
       <br>
-      Zip code: <input type="text" name="bill-zipCode">
-     
+      <label>Zip code:</label>
+      <input type="text" name="bill-zipCode">
+      </div>
+      <br>
       <input type="submit" value="Submit">
       </form>
       <a href="../login.php" class="button">Go back</a>

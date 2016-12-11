@@ -7,11 +7,11 @@
 	Date: December 12, 2016
 -->
 <html lang="en-US">
-
 <head>
     <meta charset="utf-8"/>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/pokeball.ico">
 </head>
 
 <body class="pokemon-bg">

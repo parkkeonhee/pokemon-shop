@@ -7,53 +7,48 @@
 	Date: December 12, 2016
 -->
 <html lang="en-US">
-
-<head>
-    <meta charset="utf-8"/>
-    <title>Checkout</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
-    <script type="text/javascript" src="card.js"></script>
-</head>
-
-<body>
-    
-    <div>
-        <!-- left page div 70%-->
-        <div>
-		<?php
-		
-		session_start();
-		$user = $_SESSION['name'];
-
-		$servername = "localhost";
-		$username = "knguyen74";
-		$password = "knguyen74";
-		$dbname = "knguyen74";
-		$conn = mysqli_connect($servername, $username, $password, $dbname);
-		if ($conn->connect_error) {
-			 die("Connection failed: " . $conn->connect_error);
-		} 
-
-		
-$sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
-$result0 = $conn->query($sql0);
-echo "<h3>ACCOUNTS</h3>";
-if ($result0->num_rows > 0) {
-     // output data of each row
-     while($row = $result0->fetch_assoc()) {
-
-		 $username=$row["username"];
-		 $password=$row["password"];
-		 $admin=$row["admin"];
-		 $fname=$row["fname"];
-		 $lname=$row["lname"];
-		 $email=$row["email"];
-		 $phone=$row["phone"];
-		 $sadd=$row["sadd"];
-		 $scity=$row["scity"];
-		 $scounty=$row["scounty"];
-		 $sstate=$row["sstate"];
+	<head>
+		<meta charset="utf-8"/>
+		<title>Checkout</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
+		<script type="text/javascript" src="card.js"></script>
+	</head>
+	<body>
+		<div>
+			<!-- left page div 70%-->
+			<div>
+			<?php
+				session_start();
+				$user = $_SESSION['name'];
+				$servername = "localhost";
+				$username = "knguyen74";
+				$password = "knguyen74";
+				$dbname = "knguyen74";
+				$conn = mysqli_connect($servername, $username, $password, $dbname);
+				
+				if ($conn->connect_error) {
+					die("Connection failed: " . $conn->connect_error);
+				}
+				
+				$sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
+				$result0 = $conn->query($sql0);
+				echo "<h3>ACCOUNTS</h3>";
+				
+				if ($result0->num_rows > 0) {
+					// output data of each row
+					while($row = $result0->fetch_assoc()) {
+						$username=$row["username"];
+						$password=$row["password"];
+						$admin=$row["admin"];
+						$fname=$row["fname"];
+						$lname=$row["lname"];
+						$email=$row["email"];
+						$phone=$row["phone"];
+						$sadd=$row["sadd"];
+						$scity=$row["scity"];
+						$scounty=$row["scounty"];
+						$sstate=$row["sstate"];
 		 $szip=$row["szip"];
 		 $badd=$row["badd"];
 		 $bcity=$row["bcity"];
@@ -174,11 +169,7 @@ if ($result0->num_rows > 0) {
 			} else {
 				 echo "Cart is empty";
 			}
-			
-			
-			
-			     echo   '</div><!-- right page div 30%-->';
-        
+			echo '</div><!-- right page div 30%-->';
 			echo '<div>';
             echo '<h3>Your order</h3>';
             echo '<p>Items: '.$all.'</p>';
@@ -187,16 +178,8 @@ if ($result0->num_rows > 0) {
 			?>
 			<input type="submit" value="Place your order" name="placeOrder" class="button" />
             </form>
-			
-
-            
-
             <a href="account.php" class="button">Go back</a>
         </div>
     </div>
-    
-
-
-</body>
-
+    </body>
 </html>

@@ -114,20 +114,20 @@
 			<h3>add admin</h3>
 			<p>name: <input name="name" type="text"></p>
 			<p>password: <input name="password" type="text"></p>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-delete-account.php" method="post">
 			<h3>delete user</h3>
 			<p>name: <input name="name" type="text"></p>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-change-password.php" method="post">
 			<h3>change password of account</h3>
 			<p>name: <input name="name" type="text"></p>
 			<p>password: <input name="password" type="text"></p>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-add-product.php" method="post">
@@ -139,37 +139,37 @@
 			<p>price: <input name="price" type="number" step="0.01" min="0"></p>
 			<p>type: <input name="type" type="text"></p>
 			<p>stock: <input name="stock" type="number" min="0"></p>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-delete-product.php" method="post">
 			<h3>delete product</h3>
 			<p>id: <input name="id" type="text"></p>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-update-product-stock.php" method="post">
 			<h3>update product's stock</h3>
 			<p>id: <input name="id" type="text"></p>
 			<p>stock: <input name="stock" type="number"></p>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-update-product-description.php" method="post">
 			<h3>update product's description</h3>
 			<p>id: <input name="id" type="text"></p>
 			<p>description: <textarea name="description" rows="10" cols="25">ENTER description</textarea>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="reset-item-table.php" method="post">
 			<h3>Clean Item Table</h3>
-			<input type="submit" id="btn2" value="Submit">
+			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="../login.php" method="post">
 			<h3>Logout</h3>
-			<input type="submit" id="btn2" value="Log Out">
+			<input type="submit" id="btn2" value="Logout" class="button-orange">
 		</form>
 </body>
 </html>

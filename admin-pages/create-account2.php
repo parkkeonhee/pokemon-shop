@@ -48,12 +48,12 @@
 				$bstate=$_POST["bill-usa-State"];
 				$bzip=$_POST["bill-zipCode"];
 				
-				$sql = "INSERT INTO accounts VALUES ('$username','$password','N','$fname','$lname','$email','$phone','$sadd','$scity','$scounty','$sstate','$szip','$badd','$bcity','$bcounty','$bstate','$bzip')";
+				$sql = "INSERT INTO accounts VALUES('$username','$password','N','$fname','$lname','$email','$phone','$sadd','$scity','$scounty','$sstate','$szip','$badd','$bcity','$bcounty','$bstate','$bzip')";
 				
 				if ($conn->query($sql) === TRUE) {
-					echo "New user successfully saved";
+					echo "<h1>New user successfully saved.</h1>";
 				} else {
-					echo "Error: New user failed to be saved";
+					echo "<h1>Error: New user failed to be saved.</h1>";
 				}
 				$conn->close();
 			?>

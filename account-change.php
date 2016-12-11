@@ -59,10 +59,10 @@ if ($result0->num_rows > 0) {
 		
 		echo	"<h2>Password Information</h2>";
 		echo  "<form action=\"update-account.php\" method=\"post\">";
-		          "<div>"
-		echo	"<label>Password:</label><input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";
-		echo	  "<br>";
-		echo	  "<label>Confirm Password:</label><input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
+	    echo         "<div>
+		    	<label>Password:</label><input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";
+		echo   	  "<br>";
+		echo    	  "<label>Confirm Password:</label><input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
 		echo	  "<br>";
 		           "</div>";
 		echo  "<h2>Contact Information</h2>";
@@ -94,7 +94,7 @@ if ($result0->num_rows > 0) {
 		echo  "</p>";
 		
 		echo  "<div class=\"sub\">
-		       <a href=\"account.php\"><input type=\"submit\" value=\"Submit\" id=\"sub\" class=\"button-orange\">;
+		       <a href=\"account.php\"><input type=\"submit\" value=\"Submit\" id=\"sub\" class=\"button-orange\">
 		       </div>";
 		echo  "</form>";
 

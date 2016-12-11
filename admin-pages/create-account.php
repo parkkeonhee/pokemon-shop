@@ -9,7 +9,7 @@
 
 <html lang="en-US">
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <title>Create Account</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="icon" type="image/x-icon" href="../images/pokeball.ico"/>
@@ -63,26 +63,26 @@
       
       <h3>Billing address</h3>
       <div>
-      <label>Street address:</label> 
-      <input type="text" name="bill-streetAddress">
-      <br>
-      <label>City:</label>
-      <input type="text" name="bill-city">
-      <br>
-      <label>County:</label> 
-      <input type="text" name="bill-county">
-      <br>
-      <label>State:</label> 
-      <input type="text" name="bill-usa-State">
-      <br>
-      <label>Zip code:</label>
-      <input type="text" name="bill-zipCode">
+          <label>Street address:</label>
+          <input type="text" name="bill-streetAddress">
+          <br>
+          <label>City:</label>
+          <input type="text" name="bill-city">
+          <br>
+          <label>County:</label>
+          <input type="text" name="bill-county">
+          <br>
+          <label>State:</label>
+          <input type="text" name="bill-usa-State">
+          <br>
+          <label>Zip code:</label>
+          <input type="text" name="bill-zipCode">
       </div>
       <br>
       <div class="sub">
-       <a href="../login.php">
-      <input id="sub" type="button" value="Submit" class="button">
-      </a>
+          <a href="../login.php">
+              <input id="sub" type="button" value="Submit" class="button">
+          </a>
       </div>
       </div>
       </form>

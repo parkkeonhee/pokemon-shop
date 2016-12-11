@@ -23,6 +23,6 @@
     ?>
 	<h1>Welcome to the PokeShop</h1>
 	<a href="login.php"><input type="button" id="btn1" value="Login" class="button"></a>
-	<a href="shop.php"><input type="button" id="btn1" value="Continue" class="button"></a>
+	<a href="shop.php"><input type="button" id="btn1" value="Homepage" class="button"></a>
 </body>
 </html>

@@ -91,11 +91,11 @@ if ($result0->num_rows > 0) {
 
 		?>
             <h3>3. Payment Method</h3>
-            <form action="" method="post">
 			<div id="display">
 			</div>
 			<div id="display2">
 			</div>
+				<form action="confirmation.php" method="post">
                 Card number: <input type="number" onblur="start()" id="num" name="cardNumberCC"/>
                 <br>
                 Name on card: <input type="text" name="ownerNameCC"/>
@@ -125,7 +125,6 @@ if ($result0->num_rows > 0) {
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                 </select>
-            </form>
             
             
             <h3>Review Items and Shipping</h3>
@@ -185,13 +184,12 @@ if ($result0->num_rows > 0) {
             echo '<p>Free Shipping & Handling: 0.00</p>';
             echo '<p>Order total: '.$all.'</p>';
 			?>
-			
+			<input type="submit" value="Place your order" name="placeOrder" class="button" />
+            </form>
 			
 
             
-            <form>
-                <input type="submit" value="Place your order" name="placeOrder" class="button" />
-            </form>
+
             <a href="account.php" class="button">Go back</a>
         </div>
     </div>

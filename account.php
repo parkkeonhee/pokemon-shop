@@ -93,7 +93,7 @@ if ($result2->num_rows > 0) {
 		} else {
 		}		 
 		 $total=$price*$number;
-         echo "<tr><td>".$name."</td><td>".$number."</td><td>".$total."</td><td>".$date."</td><td>".$time."</td></tr>";
+         echo "<tr><td>".$name."</td><td>".$number."</td><td>".$total."</td><td>".$date."</td><td>".$ordernum."</td></tr>";
      }
 	 echo "</table>";
 } else {

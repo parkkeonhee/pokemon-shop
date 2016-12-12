@@ -8,7 +8,7 @@ function check1() {
 	var part3 = number.substring(0, 1) == "4";
 
 	if ((part1 || part2) && part3) {
-		document.getElementById('display').innerHTML = "visa";
+		document.getElementById('display').innerHTML = '<img src="images/cc/visa.png" alt="Visa" style="width:100px;height:100px;">';
 	}
 }
 
@@ -16,19 +16,19 @@ function check2() {
 	if (number.length == 16 && (number.substring(0, 2) == "51" ||
 			number.substring(0, 2) == "52" || number.substring(0, 2) == "53" ||
 			number.substring(0, 2) == "54" || number.substring(0, 2) == "55")) {
-		document.getElementById('display').innerHTML = "mastercard";
+		document.getElementById('display').innerHTML = '<img src="images/cc/mastercard.png" alt="MasterCard" style="width:100px;height:100px;">';
 	}
 }
 
 function check3() {
 	if (number.length == 15 && (number.substring(0, 2) == "34" || number.substring(0, 2) == "37")) {
-		document.getElementById('display').innerHTML = "American Express";
+		document.getElementById('display').innerHTML = '<img src="images/cc/amex.png" alt="American Express" style="width:100px;height:100px;">';
 	}
 }
 
 function check4() {
 	if (number.length == 16 && number.substring(0, 4) == "6011") {
-		document.getElementById('display').innerHTML = "Discover";
+		document.getElementById('display').innerHTML = '<img src="images/cc/discover.png" alt="Discover" style="width:100px;height:100px;">';
 	}
 }
 

@@ -98,7 +98,7 @@
         echo '<!-- top div -->';
         echo '<div>';
         echo '<!-- top-left div -->';
-        echo '<img src="images/pokemon-logo.jpg" alt="pokeshop logo"/>';
+        echo '<img src="images/pokestop.png" alt="pokeshop logo"/>';
         echo '<!-- top-center div -->';
         echo '<div>';
         echo '<h3>Order Confirmation</h3>';

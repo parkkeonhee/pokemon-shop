@@ -15,6 +15,9 @@
 		<script type="text/javascript" src="card.js"></script>
 	</head>
 	<body>
+		<div class="center">
+            <img src="images/pokestop.png" alt="pokestop"/>
+        </div>
 		<div>
 			<!-- left page div 70%-->
 			<div>

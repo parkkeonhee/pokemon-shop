@@ -34,13 +34,12 @@
 	        $sql = "UPDATE accounts SET password = '$password' WHERE username = '$username'";
 	        
 	        if ($conn->query($sql) === TRUE) {
-	            echo "User successfully edited";
+	            echo "<h1>User password successfully changed!</h1>";
 	        } else {
-	            echo "Error: User failed to be edited";
+	            echo "<h1>Error: Failed to change user's password!</h1>";
 	        }
 	        $conn->close();
 	   ?>
-	   <br>
 	   <a href="admin-access.php">
 	   	<input type="button" class="button" id="btn1" value="Admin Page">
 	   </a>

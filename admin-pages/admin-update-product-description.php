@@ -33,13 +33,12 @@
                 $description=$_POST["description"];
                 $sql = "UPDATE products SET description = '$description' WHERE id = '$id'";
                 if ($conn->query($sql) === TRUE) {
-                    echo "<h1>Description successfully edited!</h1>";
+                    echo "<h1>Pokémon description successfully edited!</h1>";
                 } else {
-                    echo "<h1>Error: Description failed to be edited</h1>";
+                    echo "<h1>Error: Failed to edit pokémon description</h1>";
                 }
                 $conn->close();
             ?>
-            <br>
             <a href="admin-access.php">
                 <input type="button" id="btn1" class="button" value="Admin Page">
             </a>

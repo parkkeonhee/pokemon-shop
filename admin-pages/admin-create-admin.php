@@ -34,13 +34,12 @@
                 $sql = "INSERT INTO accounts (username, password, admin) VALUES ('$username', '$password', 'Y')";
                 
                 if ($conn->query($sql) === TRUE) {
-                    echo "New user successfully saved!";
+                    echo "<h1>New admin successfully created!</h1>";
                 } else {
-                    echo "Error: New user failed to be saved!";
+                    echo "<h1>Error: Failed to create new admin!</h1>";
                 }
                 $conn->close();
             ?>
-            <br>
             <a href="admin-access.php">
                 <input type="button" id="btn1" class="button" value="Admin Page">
             </a>

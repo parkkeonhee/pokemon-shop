@@ -40,13 +40,12 @@
                 $sql = "INSERT INTO products VALUES ('$id','$name','$description','$img','$price','$type','$stock')";
                 
                 if ($conn->query($sql) === TRUE) {
-                    echo "New product successfully saved";
+                    echo "<h1>New pokémon successfully added!</h1>";
                 } else {
-                    echo "Error: New product failed to be saved";
+                    echo "<h1>Error: Failed to add new pokémon!</h1>";
                 }
                 $conn->close();
             ?>
-            <br>
             <a href="admin-access.php">
                 <input type="button" class="button" id="btn1" value="Admin Page">
             </a>

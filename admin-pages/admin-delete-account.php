@@ -35,12 +35,11 @@
                 if ($conn->query($sql) === TRUE) {
                     echo "<h1>User successfully deleted!</h1>";
                 } else {
-                    echo "<h1>Error: User failed to be deleted!</h1>";
+                    echo "<h1>Error: Failed to delete user!</h1>";
                 }
                 echo "</div>";
                 $conn->close();
             ?>
-            <br>
             <a href="admin-access.php">
                 <input type="button" id="btn1" class="button" value="Admin Page">
             </a>

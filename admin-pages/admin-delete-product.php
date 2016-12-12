@@ -32,13 +32,12 @@
                 $sql = "DELETE from products WHERE id = '$id'";
                 
                 if ($conn->query($sql) === TRUE) {
-                    echo "Product successfully deleted";
+                    echo "<h1>Pokémon successfully deleted!</h1>";
                 } else {
-                    echo "Error: product failed to be deleted";
+                    echo "<h1>Error: Failed to delete pokémon!</h1>";
                 }
                 $conn->close();
             ?>
-            <br>
             <a href="admin-access.php">
                 <input type="button" class="button" id="btn1" value="Admin Page">
             </a>

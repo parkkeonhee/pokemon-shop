@@ -18,6 +18,10 @@
 			session_start();
 			$user = $_SESSION['name'];
 			
+			echo '<div class="center">
+					<img src="images/pokestop.png" alt="pokestop"/>
+					</div>';
+			
 			if($user===0)
 			{
 				echo '<a href="login.php">

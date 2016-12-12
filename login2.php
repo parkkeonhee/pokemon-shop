@@ -14,6 +14,9 @@
 		<link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
 	</head>
 	<body class="pokemon-bg">
+		<div class="center">
+            <img src="images/pokestop.png" alt="pokestop"/>
+        </div>
 		<?php
 			$servername = "localhost";
 			$username = "knguyen74";
@@ -57,6 +60,8 @@
 			}
 			$sql0 = "SELECT password, admin FROM accounts WHERE username='$userName'";
 			$result0 = $conn->query($sql0);
+			
+			
 			
 			if ($result0->num_rows > 0) {
 				while($row = $result0->fetch_assoc()) {

@@ -14,6 +14,7 @@
         <link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
     </head>
     <body>
+        
         <?php
             session_start();
             $user = $_SESSION['name'];
@@ -26,6 +27,9 @@
                     <a href="account.php">
                         <input type="button" id="btn1" value="account" class="button">
                     </a>
+                </div>';
+            echo '<div class="center">
+                    <img src="images/pokestop.png" alt="pokestop"/>
                 </div>';
             
             $servername = "localhost";

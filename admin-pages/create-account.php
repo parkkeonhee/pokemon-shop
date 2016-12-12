@@ -16,7 +16,9 @@
 </head>
 
 <body>
-    
+    <div class="center">
+        <img src="images/pokestop.png" alt="pokestop"/>
+    </div>
     <h2>Create Account</h2>
       
 	  <form action="create-account2.php" method="post">

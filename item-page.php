@@ -14,6 +14,11 @@
 		<link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
 	</head>
 	<body>
+		<div class="right">
+			<a href="shop.php">
+				<input type="button" class="button-orange" id="btn1" value="Back">
+			</a>
+		</div>
 		<div class="center">
             <img src="images/pokestop.png" alt="pokestop"/>
         </div>
@@ -81,7 +86,6 @@
 					echo '<p>Amount: <input name="number" type="number" min="1" value="1"></p><br>';
 					echo  "<input type=\"submit\" value=\"Add to cart\" class=\"button\">";
 					echo '</form>';
-					echo '<a href="shop.php"><input type="button" class="button-orange" id="btn1" value="Back"></a>';
 					echo '</div>';
 				}
 			} else {

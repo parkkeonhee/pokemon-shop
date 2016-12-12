@@ -68,13 +68,13 @@ if ($result0->num_rows > 0) {
 		 echo	"<h2>Password</h2>";
 		echo  "<form action=\"update-account.php\" method=\"post\">";
 	    echo         "<div>
-		    	<label>Password:</label><input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";
+		    	<label>Password:</label> <input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";
 		echo   	  "<br>";
-		echo    	  "<label>Confirm Password:</label><input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
+		echo    	  "<label>Confirm Password:</label> <input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
 		echo	  "<br>";
 		           "</div>";
 		echo  "<h2>Contact</h2>";
-		echo	  "<label>Email address:</label><input type=\"text\" name=\"emailAddress\" value=\"".$email."\">";
+		echo	  "<label>Email address:</label> <input type=\"text\" name=\"emailAddress\" value=\"".$email."\">";
 		echo	  "<br>";
 		echo	  "<label>Phone number:</label> <input type=\"text\" name=\"phone\" value=\"".$phone."\"><!--10 digits only-->";
 		  
@@ -94,7 +94,7 @@ if ($result0->num_rows > 0) {
 		echo  "<br>";
 		echo  "<label>City:</label> <input type=\"text\" name=\"bill-city\" value=\"".$bcity."\">";
 		echo  "<br>";
-		echo  "<label>County</label>: <input type=\"text\" name=\"bill-county\" value=\"".$bcounty."\">";
+		echo  "<label>County:</label> <input type=\"text\" name=\"bill-county\" value=\"".$bcounty."\">";
 		echo  "<br>";
 		echo  "<label>State:</label> <input type=\"text\" name=\"bill-usa-State\" value=\"".$bstate."\">";
 		echo  "<br>";

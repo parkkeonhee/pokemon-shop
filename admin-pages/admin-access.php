@@ -291,6 +291,19 @@
 			</div>
 		</form>
 		
+		<form action="admin-update-product-img.php" method="post">
+			<h2>Update Product's Image</h2>
+			<div>
+				<label>ID:</label> <input name="id" type="text">
+				<br>
+				<br>
+				<label>Image:</label> <input name="img" type="text">
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Update Stock" class="button">
+			</div>
+		</form>
+		
 		<hr>
 		
 		<form action="admin-update-product-description.php" method="post">

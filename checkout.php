@@ -101,7 +101,7 @@
 			</div>
 			
 			<form action="confirmation.php" method="post">
-				Card number: <input type="number" onblur="start()" id="num" name="cardNumberCC"/>
+				Credit Card number: <input type="number" onblur="start()" id="num" name="cardNumberCC"/>
 				<br>
 				Name on card: <input type="text" name="ownerNameCC"/>
 				<br>
@@ -198,9 +198,9 @@
 				echo '</div><!-- right page div 30%-->';
 				echo '<div>';
 				echo '<h2>Total Orders</h2>';
-				echo '<p>Items: '.$all.'</p>';
-				echo '<p>Free Shipping & Handling: 0.00</p>';
-				echo '<p>Order total: '.$all.'</p>';
+				echo '<p>Pokémon item prices: $'.$all.'</p>';
+				echo '<p>Free Shipping & Handling: $0.00</p>';
+				echo '<p>Order total: $'.$all.'</p>';
 			?>
 			
 			<input type="submit" value="Place your order" name="placeOrder" class="button" />

@@ -168,8 +168,8 @@
         			<tr>
         				<th>Pokémon</th>
         				<th>Name</th>
-        				<th>number</th>
-        				<th>price</th>
+        				<th>Quantity</th>
+        				<th>Price</th>
         			</tr>";
         			
         	while($row = $result2->fetch_assoc()) {
@@ -201,7 +201,7 @@
         				</td>
         				<td>".$name."</td>
         				<td>".$number."</td>
-        				<td>".$total."</td>
+        				<td>$".$total."</td>
         			</tr>";
         	}
         	echo "</table>";

@@ -23,7 +23,8 @@
 	
 	session_start();
 	$user = $_SESSION['name'];
-
+	
+	echo "<p class='user'>You are logged in as Trainer <b>" . $user . "</b>!</p>";
 	$servername = "localhost";
 	$username = "knguyen74";
 	$password = "knguyen74";

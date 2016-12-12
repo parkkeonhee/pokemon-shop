@@ -18,11 +18,7 @@
         <?php
             session_start();
             $user = $_SESSION['name'];
-            if($user===0) {
-                
-            }else{
-                echo $user;
-            }
+            
             echo '<div class="right">
                     <a href="account.php">
                         <input type="button" id="btn1" value="Account" class="button-orange"/>
@@ -31,6 +27,13 @@
             echo '<div class="center">
                     <img src="images/pokestop.png" alt="pokestop"/>
                 </div>';
+            
+            
+            if($user===0) {
+                
+            }else{
+                echo "<p class='user'>You are logged in as Trainer <b>" . $user . "</b>!</p>";
+            }
             
             $servername = "localhost";
             $username = "knguyen74";

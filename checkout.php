@@ -15,6 +15,9 @@
 		<script type="text/javascript" src="card.js"></script>
 	</head>
 	<body>
+		<div class="right">
+			<a href="account.php" class="button-orange">Go back</a>
+		</div>
 		<div class="center">
             <img src="images/pokestop.png" alt="pokestop"/>
         </div>
@@ -36,6 +39,8 @@
 				
 				$sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
 				$result0 = $conn->query($sql0);
+				
+				echo "<p class='user'>You are logged in as Trainer <b>" . $user . "</b>!</p>";
 				echo "<h1>Account Information</h1>";
 				
 				if ($result0->num_rows > 0) {
@@ -200,7 +205,6 @@
 			
 			<input type="submit" value="Place your order" name="placeOrder" class="button" />
 			</form>
-			<a href="account.php" class="button-orange">Go back</a>
 			</div>
 		</div>
 	</body>

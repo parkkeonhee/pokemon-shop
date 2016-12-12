@@ -119,9 +119,7 @@
         //Order #1532250234
         echo '<br/>';
         echo '<h2>Shipping speed:</h2>';
-        echo '<ul>';
-        echo '<li>Standard free shipping</li>';
-        echo '</ul>';
+        echo '<p>Standard free shipping</p>';
         echo '<h2>Your order was sent to:</h2>';
         
         $sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";

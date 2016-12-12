@@ -14,7 +14,6 @@
 		<title>Admin: Access</title>
 	</head>
 	<body>
-		
 		<form action="../login.php" method="post">
 			<div class="right">
 				<input type="submit" id="btn2" value="Logout" class="button-orange">
@@ -26,7 +25,6 @@
 		<?php
 			session_start();
 			$user = $_SESSION['name'];
-			echo $user;
 			$servername = "localhost";
 			$username = "knguyen74";
 			$password = "knguyen74";
@@ -37,15 +35,17 @@
 				die("Connection failed: " . $conn->connect_error);
 			}
 			
-			
-			
 			$sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts";
 			$result0 = $conn->query($sql0);
-			echo "<h2>Accounts</h2>";
 			
+			echo "<p class='user'>You are logged in as <b><u>Admin</u> ". $user . "</b>!</p>";
+			
+			echo "<hr>";
+			
+			echo "<h2>Accounts</h2>";
 			if ($result0->num_rows > 0) {
 				// output data of each row
-				echo "<table>
+				echo "<table class='center'>
 						<tr>
 							<th>username</th>
 							<th>password</th>
@@ -112,18 +112,20 @@
 			$sql1 = "SELECT id, name, description, img, price, type, stock  FROM products";
 			$result1 = $conn->query($sql1);
 			
+			echo "<hr>";
+			
 			echo "<h2>Products</h2>";
 			if ($result1->num_rows > 0) {
 				// output data of each row
-				echo "<table>
+				echo "<table class='center'>
 						<tr>
-							<th>id</th>
-							<th>name</th>
-							<th>description</th>
-							<th>img</th>
-							<th>price</th>
-							<th>type</th>
-							<th>stock</th>
+							<th>ID</th>
+							<th>Name</th>
+							<th>Description</th>
+							<th>Image</th>
+							<th>Price</th>
+							<th>Type</th>
+							<th>Stock</th>
 						</tr>";
 				while($row = $result1->fetch_assoc()) {
 					$id=$row["id"];
@@ -151,17 +153,19 @@
 			$sql2 = "SELECT id, number, username, type, date, ordernum FROM items";
 			$result2 = $conn->query($sql2);
 			
+			echo "<hr>";
+			
 			echo "<h2>Items</h2>";
 			if ($result2->num_rows > 0) {
 				// output data of each row
-				echo "<table>
+				echo "<table class='center'>
 						<tr>
-							<th>id</th>
-							<th>number</th>
-							<th>username</th>
-							<th>type</th>
-							<th>date</th>
-							<th>ordernum</th>
+							<th>ID</th>
+							<th>Number</th>
+							<th>Username</th>
+							<th>Type</th>
+							<th>Date</th>
+							<th>Order #</th>
 						</tr>";
 				
 				while($row = $result2->fetch_assoc()) {
@@ -188,116 +192,128 @@
 			$conn->close();
 		?>
 		
+		<hr>
+		
 		<form action="admin-create-admin.php" method="post">
 			<h2>Add Admin</h2>
 			<div>
-				<label>name:</label> <input name="name" type="text">
+				<label>Name:</label> <input name="name" type="text">
 				<br>
 				<br>
-				<label>password:</label> <input name="password" type="text">
-			</div>
-			<div class="sub">
-				<input type="submit" id="btn2" value="Submit" class="button">
+				<label>Password:</label> <input name="password" type="text">
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Add" class="button">
 			</div>
 		</form>
+		
+		<hr>
 		
 		<form action="admin-delete-account.php" method="post">
 			<h2>Delete user</h2>
 			<div>
-				<label>name:</label> <input name="name" type="text">
-			</div>
-			<br>
-			<div class="sub">
-				<input type="submit" id="btn2" value="Submit" class="button">
+				<label>Name:</label> <input name="name" type="text">
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Delete" class="button">
 			</div>
 		</form>
+		
+		<hr>
 		
 		<form action="admin-change-password.php" method="post">
 			<h2>Change Password of Account</h2>
 			<div>
-				<label>name:</label> <input name="name" type="text">
+				<label>Name:</label> <input name="name" type="text">
 				<br>
 				<br>
-				<label>password:</label> <input name="password" type="text">
-			</div>
-			<br>
-			<div class="sub">
-				<input type="submit" id="btn2" value="Submit" class="button">
+				<label>Password:</label> <input name="password" type="text">
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Change Password" class="button">
 			</div>
 		</form>
+		
+		<hr>
 		
 		<form action="admin-add-product.php" method="post">
 			<h2>Add Product</h2>
 			<div>
-				<label>id:</label> <input name="id" type="text">
+				<label>ID:</label> <input name="id" type="text">
 				<br>
 				<br>
-				<label>name:</label> <input name="name" type="text">
+				<label>Name:</label> <input name="name" type="text">
 				<br>
 				<br>
-				<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+				<label>Description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
 				<br>
 				<br>
-				<label>img:</label> <input name="img" type="text">
+				<label>Image:</label> <input name="img" type="text">
 				<br>
 				<br>
-				<label>price:</label> <input name="price" type="number" step="0.01" min="0">
+				<label>Price:</label> <input name="price" type="number" step="0.01" min="0">
 				<br>
 				<br>
-				<label>type:</label> <input name="type" type="text">
+				<label>Type:</label> <input name="type" type="text">
 				<br>
 				<br>
-				<label>stock:</label> <input name="stock" type="number" min="0">
-			</div>
-			<br>
-			<div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<label>Stock:</label> <input name="stock" type="number" min="0">
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Add Product" class="button">
 			</div>
 		</form>
+		
+		<hr>
 		
 		<form action="admin-delete-product.php" method="post">
 			<h2>Delete Product</h2>
 			<div>
-				<label>id:</label> <input name="id" type="text">
-			</div>
-			<br>
-			<div class="sub">
-			 	<input type="submit" id="btn2" value="Submit" class="button">
+				<label>ID:</label> <input name="id" type="text">
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Delete Product" class="button">
 			</div>
 		</form>
+		
+		<hr>
 		
 		<form action="admin-update-product-stock.php" method="post">
 			<h2>Update Product's Stock</h2>
 			<div>
-				<label>id:</label> <input name="id" type="text">
+				<label>ID:</label> <input name="id" type="text">
 				<br>
 				<br>
-				<label>stock:</label> <input name="stock" type="number">
-			</div>
-			<br>
-			<div class="sub">
-				<input type="submit" id="btn2" value="Submit" class="button">
+				<label>Stock:</label> <input name="stock" type="number">
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Update Stock" class="button">
 			</div>
 		</form>
+		
+		<hr>
 		
 		<form action="admin-update-product-description.php" method="post">
 			<h2>Update Product's Description</h2>
 			<div>
-				<label>id:</label> <input name="id" type="text">
+				<label>ID:</label>
+				<input name="id" type="text">
 				<br>
 				<br>
-				<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
-			</div>
-			<br>
-			<div class="sub">
-				<input type="submit" id="btn2" value="Submit" class="button">
+				<label>Description:</label>
+				<textarea name="description" rows="2" cols="34">What is interesting about this pokémon?</textarea>
+				<br>
+				<br>
+				<input type="submit" id="btn2" value="Update Description" class="button">
 			</div>
 		</form>
 		
+		<hr>
+		
 		<form action="reset-item-table.php" method="post">
 			<h2>Clean Item Table</h2>
-			<div class="sub">
-				<input type="submit" id="btn2" value="Submit" class="button">
+			<div>
+				<input type="submit" id="btn2" value="Clean Items" class="button">
 			</div>
 		</form>
 </body>

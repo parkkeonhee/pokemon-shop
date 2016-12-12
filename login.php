@@ -20,7 +20,7 @@
             session_destroy();
         ?>
         <div class="center">
-            <img src="images/pokestop.png" alt="pokestop logo" />
+            <img src="images/pokestop.png" alt="pokestop logo"/>
             <form action="login2.php" method="post">
                 <p>
                     <h1>Login</h1>

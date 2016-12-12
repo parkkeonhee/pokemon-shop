@@ -22,11 +22,10 @@
     <div class="center">
         <img src="../images/pokestop.png" alt="pokestop"/>
     </div>
+    
     <h2>Create Account</h2>
-      
-	  <form action="create-account2.php" method="post">
-	        <div class="block">
-	      <div>
+    <form action="create-account2.php" method="post">
+        <div class="block"><div>
       <label>First name:</label>
       <input type="text" name="firstName">
       <br>
@@ -53,8 +52,8 @@
       <label>Street address:</label> 
       <input type="text" name="ship-streetAddress">
       <br>
-     <label> City:</label> 
-     <input type="text" name="ship-city">
+      <label> City:</label> 
+      <input type="text" name="ship-city">
       <br>
       <label>County:</label>
       <input type="text" name="ship-county">
@@ -86,7 +85,7 @@
       <br>
       <div class="sub">
           <a href="../login.php">
-              <input id="sub" type="button" value="Submit" class="button">
+              <input id="sub" type="submit" value="Submit" class="button">
           </a>
       </div>
       </div>

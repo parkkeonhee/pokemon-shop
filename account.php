@@ -37,7 +37,7 @@
 				if ($conn->connect_error) {
 					die("Connection failed: " . $conn->connect_error);
 				}
-				echo "<p class='user'>You are logged in as " . $user . "</p>";
+				echo "<p class='user'>You are logged in as Trainer <b>" . $user . "</b>!</p>";
 				$sql = 'SELECT id, number FROM items WHERE username="'.$user.'" AND type="C"';
 				$result2 = $conn->query($sql);
 				echo "<h1>In Cart</h1>";

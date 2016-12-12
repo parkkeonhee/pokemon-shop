@@ -70,9 +70,9 @@
 			$sql = "INSERT INTO accounts VALUES ('$user','$password','N','$fname','$lname','$email','$phone','$sadd','$scity','$scounty','$sstate','$szip','$badd','$bcity','$bcounty','$bstate','$bzip')";
 			
 			if ($conn->query($sql) === TRUE) {
-				echo "Account successfully updated";
+				echo "<h1>Account successfully updated<h1>";
 			} else {
-				echo "Error: Account failed to be updated";
+				echo "<h1>Error: Account failed to be updated</h1>";
 			}
 			
 			$conn->close();

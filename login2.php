@@ -65,7 +65,7 @@
 				while($row = $result0->fetch_assoc()) {
 					echo '<div style="center">';
 					if($password==$row["password"]){
-						echo '<h1>You have successfully logged in.</h1>';
+						echo '<p>You have successfully logged in as Trainer ' . $_SESSION['name'] . '!</p>';
 						if($row["admin"]=="Y"){
 							//admin page
 							echo '<a href="admin-pages/admin-access.php">

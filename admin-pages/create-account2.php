@@ -51,9 +51,9 @@
 				$sql = "INSERT INTO accounts VALUES('$username','$password','N','$fname','$lname','$email','$phone','$sadd','$scity','$scounty','$sstate','$szip','$badd','$bcity','$bcounty','$bstate','$bzip')";
 				
 				if ($conn->query($sql) === TRUE) {
-					echo "<h1>New user successfully saved.</h1>";
+					echo "<h1>New user successfully saved!</h1>";
 				} else {
-					echo "<h1>Error: New user failed to be saved.</h1>";
+					echo "<h1>Error: New user failed to be saved!</h1>";
 				}
 				$conn->close();
 			?>

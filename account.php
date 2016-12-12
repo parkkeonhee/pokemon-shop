@@ -18,9 +18,7 @@
 			session_start();
 			$user = $_SESSION['name'];
 			echo '<div class="right">
-					<a href="shop.php">
-						<input type="button" id="btn2" value="Back" class="button-orange">
-					</a>';
+					<a href="shop.php" class="button-orange">Continue Shopping</a>';
 			echo '<a href="welcome.php" class="button-orange">Logout</a>';
 			echo '</div>';
 			

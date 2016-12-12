@@ -38,7 +38,7 @@
                 }
                 $conn->close();
             ?>
-            <a href="admin-access.php"><input type="button" id="btn1" value="OK"></a>
+            <a href="admin-access.php"><input type="button" class="button" id="btn1" value="OK"></a>
         </div>
     </body>
 </html>

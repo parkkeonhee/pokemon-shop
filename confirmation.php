@@ -108,7 +108,7 @@
         echo '<!-- middle div -->';
         echo '<div>';
         echo '<div>';
-        echo '<h2> delivery date:</h2>';
+        echo '<h2>Estimated delivery date:</h2>';
         
         echo '<p>' . date('m/d/Y', strtotime($date. ' + 5 days')) . '</p>';
         //order date + 5 days

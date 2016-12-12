@@ -1,0 +1,90 @@
+/*
+    Created by Kenny Nguyen, Keon Hee Park, and Rashidat Akande
+    checkout.php
+	Course: CSC 4370 - Web Programming
+	Instructor: Louis Henry
+	Date: December 12, 2016
+*/
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+outline {
+    border: 1px solid black;
+}
+
+.button-orange {
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+table.center {
+    /*margin: 0 auto;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    text-align: right;
+}
+
+html,
+body {
+    height: 100%;
+    background: #6CE6F6 no-repeat center center fixed;
+    background: -webkit-linear-gradient(left top, #6CE6F6, #fff);
+    background: -o-linear-gradient(bottom right, #6CE6F6, #fff);
+    background: -moz-linear-gradient(bottom right, #6CE6F6, #fff);
+    background: linear-gradient(to bottom right, #6CE6F6, #fff);
+}
+
+.makehidden {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    /*width: 300px;*/
+    text-align: right;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+#sub {
+    text-align: center;
+    margin-left: 300px;
+}
+
+.go {
+    text-align: center;
+    margin-left: 120px;
+}

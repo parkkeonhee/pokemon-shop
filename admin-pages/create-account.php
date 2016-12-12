@@ -17,7 +17,7 @@
 
 <body>
     <div class="center">
-        <img src="images/pokestop.png" alt="pokestop"/>
+        <img src="../images/pokestop.png" alt="pokestop"/>
     </div>
     <h2>Create Account</h2>
       

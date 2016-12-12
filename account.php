@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
 	</head>
-	<body>
+	<body class="center">
 		<?php
 			session_start();
 			$user = $_SESSION['name'];
@@ -40,11 +40,11 @@
 				echo $user.'<br>';
 				$sql = 'SELECT id, number FROM items WHERE username="'.$user.'" AND type="C"';
 				$result2 = $conn->query($sql);
-				echo "<h2>Items</h2>";
+				echo "<h1>Items</h1>";
 				
 				if ($result2->num_rows > 0) {
 					// output data of each row
-					echo "<table>
+					echo "<table class='center'>
 							<tr>
 								<th>Name</th>
 								<th>number</th>
@@ -78,23 +78,23 @@
 								<td>
 									<form action=\"remove-from-cart.php\" method=\"post\">
 										<input name=\"id\" class=\"makehidden\" type=\"text\" value=\"".$id."\">
-										<input type=\"submit\" value=\"Delete\" class=\"button\">
+										<input type=\"submit\" value=\"Delete\" class=\"button-orange\">
 									</form>
 								</td>
 							</tr>";
 					}
 					echo "</table>";
 				} else {
-					echo "Cart is empty.";
+					echo "<p>Cart is empty.</p>";
 				}
 				
 				$sql = 'SELECT id, number, date, ordernum FROM items WHERE username="'.$user.'" AND type="P" ORDER BY date DESC';
 				$result2 = $conn->query($sql);
-				echo "<h2>Purchases</h2>";
+				echo "<h1>Purchases</h1>";
 				
 				if ($result2->num_rows > 0) {
 					// output data of each row
-					echo "<table>
+					echo "<table class='center'>
 							<tr>
 								<th>Name</th>
 								<th>number</th>
@@ -102,6 +102,7 @@
 								<th>Date</th>
 								<th>Order Number</th>
 							</tr>";
+							
 					
 					while($row = $result2->fetch_assoc()) {
 						$id=$row["id"];
@@ -137,6 +138,7 @@
 				} else {
 					echo "No purchases<br>";
 				}
+				echo "<br>";
 				$conn->close();
 				echo '<div class="center">';
 				echo '<a href="account-change.php"><input type="button" id="btn0" value="Change Info" class="button"></a>';

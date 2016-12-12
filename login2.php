@@ -68,7 +68,6 @@
 					echo '<div style="center">';
 					if($password==$row["password"]){
 						echo '<h1>You have successfully logged in.</h1>';
-						echo "<br>";
 						if($row["admin"]=="Y"){
 							//admin page
 							echo '<a href="admin-pages/admin-access.php">
@@ -88,7 +87,6 @@
 						}
 					} else {
 						echo "<h1>Password is incorrect.</h1>";
-						echo "<br>";
 						echo '<a href="login.php">
 								<input type="button" id="btn1" value="Try Again" class="button-orange">
 							</a>';

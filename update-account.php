@@ -77,7 +77,9 @@
 			
 			$conn->close();
 		?>
-		<a href="login.php"><input type="button" id="btn1" value="OK"></a>
+		<a href="login.php">
+			<input type="button" id="btn1" value="Back to Login" class="button-orange">
+		</a>
 		</div>
 	</body>
 </html>

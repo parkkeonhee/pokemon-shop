@@ -14,7 +14,7 @@
 		<title>Admin: Access</title>
 	</head>
 	<body>
-		<form action="../login.php" method="post">
+		<form action="../welcome.php" method="post">
 			<div class="right">
 				<input type="submit" id="btn2" value="Logout" class="button-orange">
 			</div>

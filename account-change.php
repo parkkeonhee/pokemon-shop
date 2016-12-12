@@ -33,7 +33,7 @@
 	
 $sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
 $result0 = $conn->query($sql0);
-echo "<h3>ACCOUNTS</h3>";
+echo "<h1>Accounts</h1>";
 if ($result0->num_rows > 0) {
      // output data of each row
      while($row = $result0->fetch_assoc()) {
@@ -57,7 +57,7 @@ if ($result0->num_rows > 0) {
 		 $bzip=$row["bzip"];
 
 		
-		echo	"<h2>Password Information</h2>";
+		echo	"<h2>Password</h2>";
 		echo  "<form action=\"update-account.php\" method=\"post\">";
 	    echo         "<div>
 		    	<label>Password:</label><input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";
@@ -65,12 +65,12 @@ if ($result0->num_rows > 0) {
 		echo    	  "<label>Confirm Password:</label><input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
 		echo	  "<br>";
 		           "</div>";
-		echo  "<h2>Contact Information</h2>";
+		echo  "<h2>Contact</h2>";
 		echo	  "<label>Email address:</label><input type=\"text\" name=\"emailAddress\" value=\"".$email."\">";
 		echo	  "<br>";
 		echo	  "<label>Phone number:</label> <input type=\"text\" name=\"phone\" value=\"".$phone."\"><!--10 digits only-->";
 		  
-		echo  "<h2>Shipping address</h2>";
+		echo  "<h2>Shipping</h2>";
 		echo  "<label>Street address:</label> <input type=\"text\" name=\"ship-streetAddress\" value=\"".$sadd."\">";
 		echo  "<br>";
 		echo  "<label>City:</label> <input type=\"text\" name=\"ship-city\" value=\"".$scity."\">";
@@ -81,7 +81,7 @@ if ($result0->num_rows > 0) {
 		echo  "<br>";
 		echo  "<label>Zip code:</label> <input type=\"text\" name=\"ship-zipCode\" value=\"".$szip."\">";
 		  
-		echo  "<h3>Billing address</h3>";
+		echo  "<h2>Billing</h2>";
 		echo  "<label>Street address:</label> <input type=\"text\" name=\"bill-streetAddress\" value=\"".$badd."\">";
 		echo  "<br>";
 		echo  "<label>City:</label> <input type=\"text\" name=\"bill-city\" value=\"".$bcity."\">";

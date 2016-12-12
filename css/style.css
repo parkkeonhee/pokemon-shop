@@ -19,6 +19,10 @@
     cursor: pointer;
 }
 
+outline {
+    border: 1px solid black;
+}
+
 .button-orange {
     background-color: #FFA500;
     border: none;
@@ -38,8 +42,8 @@
 
 table.center {
     /*margin: 0 auto;*/
-    margin-left:auto; 
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .right {

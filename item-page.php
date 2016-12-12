@@ -47,33 +47,34 @@
 					echo '<div class="center">';
 					echo '<img src= "images/pokedex/'.$img.'" alt='.$name.'/><br><br>';
 					
-					echo '<table>';
+					echo '<table class="center outline">';
 					echo 
 						'<tr>
-							<th>Pokédex #</th>
-							<td>'.$id.'</td>
+							<th class="outline">Pokédex #</th>
+							<td class="outline">'.$id.'</td>
 						</tr>
 						<tr>
-							<th>Pokémon</th>
-							<td>'.$name.'</td>
+							<th class="outline">Pokémon</th>
+							<td class="outline">'.$name.'</td>
 						</tr>
 						<tr>
-							<th>Type</th>
-							<td>'.$type.'</td>
+							<th class="outline">Type</th>
+							<td class="outline">'.$type.'</td>
 						</tr>
 						<tr>
-							<th>Description</th>
-							<td>'.$description.'<td>
+							<th class="outline">Description</th>
+							<td class="outline">'.$description.'<td>
 						</tr>
 						<tr>
-							<th>Price</th>
-							<td>$'.$price.'</td>
+							<th class="outline">Price</th>
+							<td class="outline">$'.$price.'</td>
 						</tr>
 						<tr>
-							<th>Stock:</th>
-							<td>'.$stock.'</td>
+							<th class="outline">Stock:</th>
+							<td class="outline">'.$stock.'</td>
 						</tr>';
 					echo '</table>';
+					
 					echo "<form action=\"add-to-cart.php\" method=\"post\">";
 					echo '<input name="id" class="makehidden" type="text" value="'.$id.'">';
 					echo '<input name="stock" class="makehidden" type="text" value="'.$stock.'">';

@@ -52,10 +52,15 @@
                     $type=$row["type"];
                     $stock=$row["stock"];
                     
-                    echo '<form action="item-page.php" method="post">
-                    <input name="id" class="makehidden" type="text" value="'.$id.'">
-                    <div><img src= "images/pokedex/'.$img.'" alt='.$name.'> '.$name.' $'.$price.'
-                    <input type="submit" class="button" value="View"></div>
+                    echo
+                    '<form action="item-page.php" method="post">
+                        <input name="id" class="makehidden" type="text" value="'.$id.'">
+                        <div class="center">
+                            <table>
+                            <tr><td><img src= "images/pokedex/'.$img.'" alt='.$name.'/></td></tr>
+                            <tr><td><input type="submit" class="button" value="View ' .$name . ' ($'.$price.')"/></td></tr>
+                            </table>
+                        </div>
                     </form>';
                 }
             } else {

@@ -64,39 +64,57 @@
 				$bstate=$row["bstate"];
 				$bzip=$row["bzip"];
 				
+				echo "<div class='center'>";
 				echo "<h2>Password</h2>";
 				echo "<form action=\"update-account.php\" method=\"post\">";
 				echo "<label>Password:</label>
 						<input type=\"text\" name=\"passWord\" value=\"".$password."\">
 						<!--change type to password later-->";
 				echo "<br>";
-				echo "<label>Confirm Password:</label> <input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
+				echo "<label>Confirm Password:</label>
+						<input type=\"text\" name=\"confirmPassword\" value=\"".$password."\"><!--change type to password later-->";
 				echo "<br>";
+				
 				echo "<h2>Contact</h2>";
-				echo "<label>Email address:</label> <input type=\"text\" name=\"emailAddress\" value=\"".$email."\">";
+				echo "<label>Email address:</label>
+						<input type=\"text\" name=\"emailAddress\" value=\"".$email."\">";
 				echo "<br>";
-				echo "<label>Phone number:</label> <input type=\"text\" name=\"phone\" value=\"".$phone."\"><!--10 digits only-->";
+				echo "<label>Phone number:</label>
+						<input type=\"text\" name=\"phone\" value=\"".$phone."\"><!--10 digits only-->";
+				
 				echo "<h2>Shipping</h2>";
-				echo "<label>Street address:</label> <input type=\"text\" name=\"ship-streetAddress\" value=\"".$sadd."\">";
+				echo "<label>Street address:</label>
+						<input type=\"text\" name=\"ship-streetAddress\" value=\"".$sadd."\">";
 				echo "<br>";
-				echo "<label>City:</label> <input type=\"text\" name=\"ship-city\" value=\"".$scity."\">";
+				echo "<label>City:</label>
+						<input type=\"text\" name=\"ship-city\" value=\"".$scity."\">";
 				echo "<br>";
-				echo "<label>County:</label> <input type=\"text\" name=\"ship-county\" value=\"".$scounty."\">";
+				echo "<label>County:</label>
+						<input type=\"text\" name=\"ship-county\" value=\"".$scounty."\">";
 				echo "<br>";
-				echo "<label>State:</label> <input type=\"text\" name=\"ship-usa-State\" value=\"".$sstate."\">";
+				echo "<label>State:</label>
+						<input type=\"text\" name=\"ship-usa-State\" value=\"".$sstate."\">";
 				echo "<br>";
-				echo "<label>Zip code:</label> <input type=\"text\" name=\"ship-zipCode\" value=\"".$szip."\">";
+				echo "<label>Zip code:</label>
+						<input type=\"text\" name=\"ship-zipCode\" value=\"".$szip."\">";
+				
 				echo "<h2>Billing</h2>";
-				echo "<label>Street address:</label> <input type=\"text\" name=\"bill-streetAddress\" value=\"".$badd."\">";
+				echo "<label>Street address:</label>
+						<input type=\"text\" name=\"bill-streetAddress\" value=\"".$badd."\">";
 				echo "<br>";
-				echo "<label>City:</label> <input type=\"text\" name=\"bill-city\" value=\"".$bcity."\">";
+				echo "<label>City:</label>
+						<input type=\"text\" name=\"bill-city\" value=\"".$bcity."\">";
 				echo "<br>";
-				echo "<label>County:</label> <input type=\"text\" name=\"bill-county\" value=\"".$bcounty."\">";
+				echo "<label>County:</label>
+						<input type=\"text\" name=\"bill-county\" value=\"".$bcounty."\">";
 				echo "<br>";
-				echo "<label>State:</label> <input type=\"text\" name=\"bill-usa-State\" value=\"".$bstate."\">";
+				echo "<label>State:</label>
+						<input type=\"text\" name=\"bill-usa-State\" value=\"".$bstate."\">";
 				echo "<br>";
-				echo "<label>Zip code:</label> <input type=\"text\" name=\"bill-zipCode\" value=\"".$bzip."\">";
+				echo "<label>Zip code:</label>
+						<input type=\"text\" name=\"bill-zipCode\" value=\"".$bzip."\">";
 				echo "</p>";
+				echo "</div>";
 				
 				echo "<div class=\"sub\">
 				<a href=\"account.php\"><input type=\"submit\" value=\"Submit\" id=\"sub\" class=\"button\">

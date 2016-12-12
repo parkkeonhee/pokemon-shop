@@ -41,26 +41,48 @@
             $result1 = $conn->query($sql1);
             echo "<h1 class='center'>Pokémons</h1>";
             
+            $rCounter = 1
+            
+            echo "<table>";
             if ($result1->num_rows > 0) {
                 // output data of each row
                 while($row = $result1->fetch_assoc()) {
                     $id=$row["id"];
                     $name=$row["name"];
-                    $description=$row["description"];
-                    $img=$row["img"];
-                    $price=$row["price"];
-                    $type=$row["type"];
-                    $stock=$row["stock"];
+                    $description = $row["description"];
+                    $img = $row["img"];
+                    $price = $row["price"];
+                    $type = $row["type"];
+                    $stock = $row["stock"];
+                    
+                    if($rCounter % 3 == 0 || $rCounter == 1){
+                        echo "<tr>";
+                    }
                     
                     echo
-                    '<form action="item-page.php" method="post">
-                        <input name="id" class="makehidden" type="text" value="'.$id.'">
-                        <table class="center">
-                            <tr><td><img src= "images/pokedex/'.$img.'" alt='.$name.'/></td></tr>
-                            <tr><td><input type="submit" class="button" value="View ' .$name . ' ($'.$price.')"/></td></tr>
-                        </table>
-                    </form>';
+                        '<form action="item-page.php" method="post">
+                            <input name="id" class="makehidden" type="text" value="' . $id . '">
+                                <td>
+                                    <img src="images/pokedex/' . $img . '" alt=' . $name . '/>
+                                </td>';
+                    if($rCounter % 3 == 0 || $rCounter == 1){
+                        echo "</tr>";
+                    }
+                    
+                    if($rCounter % 3 == 0 || $rCounter == 1){
+                        echo "<tr>";
+                    }
+                    echo 
+                        '<td>
+                            <input type="submit" class="button" value="View ' . $name . ' ($' . $price . ')"/>
+                        </td>';
+                    
+                    if($rCounter % 3 == 0 || $rCounter == 1){
+                        echo "</tr>";
+                    }
+                    $rCounter++;
                 }
+                echo '</table></form>';
             } else {
                 echo "0 results";
             }

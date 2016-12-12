@@ -112,53 +112,57 @@
 		
 		<form action="admin-create-admin.php" method="post">
 			<h3>add admin</h3>
-			<p>name: <input name="name" type="text"></p>
-			<p>password: <input name="password" type="text"></p>
+			<div>
+			<label>name:</label> <input name="name" type="text">
+			<br>
+			<label>password:</label> <input name="password" type="text">
+			</div>
 			<input type="submit" id="btn2" value="Submit" class="button">
+			
 		</form>
 		
 		<form action="admin-delete-account.php" method="post">
 			<h3>delete user</h3>
-			<p>name: <input name="name" type="text"></p>
+			<label>name:</label> <input name="name" type="text">
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-change-password.php" method="post">
 			<h3>change password of account</h3>
-			<p>name: <input name="name" type="text"></p>
+			<label>name:</label> <input name="name" type="text"></p>
 			<p>password: <input name="password" type="text"></p>
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-add-product.php" method="post">
 			<h3>add product</h3>
-			<p><label>id:</label> <input name="id" type="text"></p>
-			<p><label>name:</label> <input name="name" type="text"></p>
-			<p><label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
-			<p><label>img:</label> <input name="img" type="text"></p>
-			<p><label>price:</label> <input name="price" type="number" step="0.01" min="0"></p>
-			<p><label>type:</label> <input name="type" type="text"></p>
-			<p><label>stock:</label> <input name="stock" type="number" min="0"></p>
+			<label>id:</label> <input name="id" type="text">
+			<label>name:</label> <input name="name" type="text">
+			<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+			<label>img:</label> <input name="img" type="text">
+		    <label>price:</label> <input name="price" type="number" step="0.01" min="0">
+			<label>type:</label> <input name="type" type="text">
+			<label>stock:</label> <input name="stock" type="number" min="0">
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-delete-product.php" method="post">
 			<h3>delete product</h3>
-			<p><label>id:</label> <input name="id" type="text"></p>
+			 <label>id:</label> <input name="id" type="text">
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-update-product-stock.php" method="post">
 			<h3>update product's stock</h3>
-			<p><label>id:</label> <input name="id" type="text"></p>
-			<p><label>stock:</label> <input name="stock" type="number"></p>
+			<label>id:</label> <input name="id" type="text">
+			<label>stock:</label> <input name="stock" type="number">
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-update-product-description.php" method="post">
 			<h3>update product's description</h3>
-			<p><label>id:</label> <input name="id" type="text"></p>
-			<p>description: <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+			<label>id:</label> <input name="id" type="text"><
+			<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		

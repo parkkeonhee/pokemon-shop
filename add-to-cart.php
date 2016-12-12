@@ -22,7 +22,7 @@
 				session_start();
 				$user = $_SESSION['name'];
 				if($user===0){
-					echo '<a href="login.php"><input type="button" id="btn1" value="Log in"></a>';
+					echo '<a href="login.php"><input type="button" id="btn1" value="Login" class="button"></a>';
 				} else{
 					$servername = "localhost";
 					$username = "knguyen74";
@@ -55,7 +55,9 @@
 					$conn->close();
 				}
 			?>
-			<a href="shop.php"><input type="button" id="btn1" class="button" value="Back To Store"></a>
+			<a href="shop.php">
+				<input type="button" id="btn1" value="Continue Shopping" class="button-orange">
+			</a>
 		</div>
 	</body>
 </html>

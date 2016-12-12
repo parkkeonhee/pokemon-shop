@@ -62,7 +62,7 @@ body {
 html,
 body {
     height: 100%;
-    background: #6CE6F6 no-repeat center center fixed;
+    background: #6CE6F6 repeat center center fixed;
     background: -webkit-linear-gradient(left top, #6CE6F6, #fff);
     background: -o-linear-gradient(bottom right, #6CE6F6, #fff);
     background: -moz-linear-gradient(bottom right, #6CE6F6, #fff);

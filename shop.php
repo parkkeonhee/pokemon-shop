@@ -55,12 +55,10 @@
                     echo
                     '<form action="item-page.php" method="post">
                         <input name="id" class="makehidden" type="text" value="'.$id.'">
-                        <div class="center">
-                            <table>
+                        <table class="center">
                             <tr><td><img src= "images/pokedex/'.$img.'" alt='.$name.'/></td></tr>
                             <tr><td><input type="submit" class="button" value="View ' .$name . ' ($'.$price.')"/></td></tr>
-                            </table>
-                        </div>
+                        </table>
                     </form>';
                 }
             } else {

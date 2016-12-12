@@ -34,9 +34,9 @@
                 
                 $sql = "UPDATE products SET stock = '$stock' WHERE id = '$id'";
                 if ($conn->query($sql) === TRUE) {
-                    echo "<h1>Stock successfully edited</h1>";
+                    echo "<h1>Stock successfully edited!</h1>";
                 } else {
-                    echo "<h1>Error: Stock failed to be edited</h1>";
+                    echo "<h1>Error: Stock failed to be edited!</h1>";
                 }
                 $conn->close();
             ?>

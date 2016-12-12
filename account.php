@@ -50,9 +50,9 @@
 					// output data of each row
 					echo "<table class='center'>
 							<tr>
-								<th>Name</th>
-								<th>number</th>
-								<th>price</th>
+								<th>Pokémon</th>
+								<th>Quantity</th>
+								<th>Price</th>
 								<th>Remove</th>
 							</tr>";
 					
@@ -78,7 +78,7 @@
 						echo "<tr>
 								<td>".$name."</td>
 								<td>".$number."</td>
-								<td>".$total."</td>
+								<td>$".$total."</td>
 								<td>
 									<form action=\"remove-from-cart.php\" method=\"post\">
 										<input name=\"id\" class=\"makehidden\" type=\"text\" value=\"".$id."\">
@@ -100,9 +100,9 @@
 					// output data of each row
 					echo "<table class='center'>
 							<tr>
-								<th>Name</th>
-								<th>number</th>
-								<th>price</th>
+								<th>Pokémon</th>
+								<th>Quantity</th>
+								<th>Price</th>
 								<th>Date</th>
 								<th>Order Number</th>
 							</tr>";

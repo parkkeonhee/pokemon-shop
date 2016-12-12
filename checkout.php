@@ -158,8 +158,8 @@
 					// output data of each row
 					echo "<table class='center'>
 						<tr>
-							<th>Name</th>
-							<th>Number</th>
+							<th>Pokémon</th>
+							<th>Quantity</th>
 							<th>Price</th>
 						</tr>";
 					
@@ -187,7 +187,7 @@
 							.$name
 							."</td><td>"
 							.$number
-							."</td><td>"
+							."</td><td>$"
 							.$total
 							."</td></tr>";
 					}

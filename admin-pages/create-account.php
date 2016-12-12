@@ -27,60 +27,61 @@
     <form action="create-account2.php" method="post">
         <div class="block"><div>
       <label>First name:</label>
-      <input type="text" name="firstName">
+          <input type="text" name="firstName">
       <br>
       <label>Last name:</label>
-      <input type="text" name="lastName">
+          <input type="text" name="lastName">
       <br>
       <label>Username:</label>
-      <input type="text" name="userName">
+          <input type="text" name="userName">
       <br>
       <label>Password:</label>
-      <input type="text" name="passWord"><!--change type to password later-->
+          <input type="text" name="passWord"><!--change type to password later-->
       <br>
       <label>Confirm Password:</label>
-      <input type="text" name="confirmPassword"><!--change type to password later-->
+          <input type="text" name="confirmPassword"><!--change type to password later-->
       <br>
       <label>Email address:</label>
-      <input type="text" name="emailAddress">
+          <input type="text" name="emailAddress">
       <br>
-      <label>Phone number:</label><input type="text" name="phone"><!--10 digits only-->
+      <label>Phone number:</label>
+          <input type="text" name="phone"><!--10 digits only-->
       </div>
       
       <h3>Shipping address</h3>
       <div>
-      <label>Street address:</label> 
+          <label>Street address:</label> 
       <input type="text" name="ship-streetAddress">
       <br>
-      <label> City:</label> 
+          <label> City:</label> 
       <input type="text" name="ship-city">
       <br>
-      <label>County:</label>
+          <label>County:</label>
       <input type="text" name="ship-county">
       <br>
-      <label>State:</label> 
+          <label>State:</label> 
       <input type="text" name="ship-usa-State">
       <br>
-      <label>Zip code:</label>
+          <label>Zip code:</label>
       <input type="text" name="ship-zipCode">
       </div>
       
       <h3>Billing address</h3>
       <div>
           <label>Street address:</label>
-          <input type="text" name="bill-streetAddress">
+              <input type="text" name="bill-streetAddress">
           <br>
           <label>City:</label>
-          <input type="text" name="bill-city">
+              <input type="text" name="bill-city">
           <br>
           <label>County:</label>
-          <input type="text" name="bill-county">
+              <input type="text" name="bill-county">
           <br>
           <label>State:</label>
-          <input type="text" name="bill-usa-State">
+              <input type="text" name="bill-usa-State">
           <br>
           <label>Zip code:</label>
-          <input type="text" name="bill-zipCode">
+              <input type="text" name="bill-zipCode">
       </div>
       <br>
       <div class="sub">

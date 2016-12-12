@@ -102,25 +102,22 @@
         echo '<!-- top-center div -->';
         echo '<div>';
         echo '<h1>Order Confirmation</h1>';
-        echo 'Order #'.$ordernum;
         echo '</div>';
         echo '<!-- top-right div -->';
-        echo '<div>';
-        echo '<a href="shop.php" class="button">Continue Shopping</a>';
-        echo '</div>';
         echo '</div>';
         echo '<!-- middle div -->';
         echo '<div>';
         echo '<div>';
-        echo '<h2>Your estimated deliver date is:</h2>';
+        echo '<h2> delivery date:</h2>';
         
-        echo date('m/d/Y', strtotime($date. ' + 5 days'));
+        echo '<p>' . date('m/d/Y', strtotime($date. ' + 5 days')) . '</p>';
         //order date + 5 days
         //Order #1532250234
-        echo '<br/>';
+        echo '<hr>';
         echo '<h2>Shipping speed:</h2>';
         echo '<p>Standard free shipping</p>';
-        echo '<h2>Your order was sent to:</h2>';
+        echo '<hr>';
+        echo '<h2>Order sent to:</h2>';
         
         $sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
         $result0 = $conn->query($sql0);
@@ -157,17 +154,17 @@
         echo '</div>';
         echo '<!-- bottom div -->';
         echo '<div>';
+        echo '<hr>';
         echo '<h2>Order Details</h2>';
-        
         //Order #1532250234
-        echo $ordernum.'<br>';
+        echo 'Order #'. $ordernum.'<br>';
         
         $sql = 'SELECT id, number, date, ordernum FROM items WHERE username="'.$user.'" AND type="P" AND ordernum="'.$ordernum.'"';
         $result2 = $conn->query($sql);
         
         if ($result2->num_rows > 0) {
         	// output data of each row
-        	echo "<table style='center'>
+        	echo "<table class='center'>
         			<tr>
         				<th>Pokémon</th>
         				<th>Name</th>
@@ -213,6 +210,10 @@
         	echo "No purchases
         	<br>";
         }
+        
+        echo '<div>';
+        echo '<a href="shop.php" class="button">Continue Shopping</a>';
+        echo '</div>';
         
         // [Image]  [Pokemon name]  [Price]
         $conn->close();

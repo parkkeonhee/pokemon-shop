@@ -33,7 +33,7 @@
 	
 $sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
 $result0 = $conn->query($sql0);
-echo "<h1>Accounts</h1>";
+echo "<h1 style='text-align:center'>Account Information</h1>";
 if ($result0->num_rows > 0) {
      // output data of each row
      while($row = $result0->fetch_assoc()) {
@@ -55,9 +55,8 @@ if ($result0->num_rows > 0) {
 		 $bcounty=$row["bcounty"];
 		 $bstate=$row["bstate"];
 		 $bzip=$row["bzip"];
-
-		
-		echo	"<h2>Password</h2>";
+		 
+		 echo	"<h2>Password</h2>";
 		echo  "<form action=\"update-account.php\" method=\"post\">";
 	    echo         "<div>
 		    	<label>Password:</label><input type=\"text\" name=\"passWord\" value=\"".$password."\"><!--change type to password later-->";

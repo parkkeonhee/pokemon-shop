@@ -25,7 +25,7 @@
             }
             echo '<div class="right">
                     <a href="account.php">
-                        <input type="button" id="btn1" value="Account" class="button">
+                        <input type="button" id="btn1" value="Account" class="button-orange"/>
                     </a>
                 </div>';
             echo '<div class="center">

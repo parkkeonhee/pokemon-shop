@@ -96,7 +96,7 @@ if ($result0->num_rows > 0) {
 		echo  "</p>";
 		
 		echo  "<div class=\"sub\">
-		       <a href=\"account.php\"><input type=\"submit\" value=\"Submit\" id=\"sub\" class=\"button-orange\">
+		       <a href=\"account.php\"><input type=\"submit\" value=\"Submit\" id=\"sub\" class=\"button\">
 		       </div>";
 		echo  "</form>";
 
@@ -106,7 +106,7 @@ if ($result0->num_rows > 0) {
 }
 	?>
       <div class="go">
-	  <a href="account.php"><input type="button" class="button" value="Back"></a>
+	  <a href="account.php"><input type="button" class="button-orange" value="Back"></a>
       </div>
 </body>
 </html>

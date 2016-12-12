@@ -56,7 +56,7 @@
 				}
 			?>
 			<a href="shop.php">
-				<input type="button" id="btn1" value="Continue Shopping" class="button-orange">
+				<input type="button" id="btn1" value="Continue Shopping" class="button">
 			</a>
 		</div>
 	</body>

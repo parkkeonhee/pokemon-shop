@@ -199,6 +199,7 @@
 			<div>
 			<label>id:</label> <input name="id" type="text">
 			<br>
+			<br>
 			<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
 			</div>
 			<div class="sub">
@@ -215,7 +216,9 @@
 		
 		<form action="../login.php" method="post">
 			<h3>Logout</h3>
+			<div>
 			<input type="submit" id="btn2" value="Logout" class="button-orange">
+			</div>
 		</form>
 </body>
 </html>

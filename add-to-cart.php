@@ -42,14 +42,14 @@
 					$stock=$_POST["stock"];
 					
 					if($number>$stock){
-						echo "<h1>Sorry insufficient stock</h1>";
+						echo "<h1>Sorry, insufficient stock!</h1>";
 					} else {
 						$sql = "INSERT INTO items VALUES ('$id','$number','$user','C','','')";
 						
 						if ($conn->query($sql) === TRUE) {
-							echo "<h1>New item successfully added to cart</h1>";
+							echo "<h1>Successfully added to cart!</h1>";
 						} else {
-							echo "<h1>Error: New item failed to be added to cart</h1>";
+							echo "<h1>Error: New item failed to be added to cart!</h1>";
 						}
 					}
 					$conn->close();

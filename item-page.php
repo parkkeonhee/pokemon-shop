@@ -44,6 +44,7 @@
 					$type=$row["type"];
 					$stock=$row["stock"];
 					
+					echo '<div class="center">';
 					echo '<img src= "images/pokedex/'.$img.'" alt='.$name.'><br>';
 					echo $id.'<br>';
 					echo $name.'<br>';
@@ -58,6 +59,7 @@
 					echo  "<input type=\"submit\" value=\"Add to cart\" class=\"button\">";
 					echo '</form>';
 					echo '<a href="shop.php"><input type="button" class="button-orange" id="btn1" value="Back"></a>';
+					echo '</div>';
 				}
 			} else {
 				echo "0 results";

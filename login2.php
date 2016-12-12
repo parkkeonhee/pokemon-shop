@@ -61,8 +61,6 @@
 			$sql0 = "SELECT password, admin FROM accounts WHERE username='$userName'";
 			$result0 = $conn->query($sql0);
 			
-			
-			
 			if ($result0->num_rows > 0) {
 				while($row = $result0->fetch_assoc()) {
 					echo '<div style="center">';

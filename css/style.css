@@ -23,6 +23,11 @@ outline {
     border: 1px solid black;
 }
 
+.user{
+    text-align: center;
+    font-size 16px;
+}
+
 .button-orange {
     background-color: #FFA500;
     border: none;

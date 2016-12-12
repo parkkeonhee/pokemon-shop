@@ -37,10 +37,10 @@
 				if ($conn->connect_error) {
 					die("Connection failed: " . $conn->connect_error);
 				}
-				echo $user.'<br>';
+				echo "<p class='user'>You are logged in as " . $user . "</p>";
 				$sql = 'SELECT id, number FROM items WHERE username="'.$user.'" AND type="C"';
 				$result2 = $conn->query($sql);
-				echo "<h1>Items</h1>";
+				echo "<h1>In Cart</h1>";
 				
 				if ($result2->num_rows > 0) {
 					// output data of each row

@@ -132,32 +132,32 @@
 		
 		<form action="admin-add-product.php" method="post">
 			<h3>add product</h3>
-			<p>id: <input name="id" type="text"></p>
-			<p>name: <input name="name" type="text"></p>
-			<p>description: <textarea name="description" rows="10" cols="25">ENTER description</textarea>
-			<p>img: <input name="img" type="text"></p>
-			<p>price: <input name="price" type="number" step="0.01" min="0"></p>
-			<p>type: <input name="type" type="text"></p>
-			<p>stock: <input name="stock" type="number" min="0"></p>
+			<p><label>id:</label> <input name="id" type="text"></p>
+			<p><label>name:</label> <input name="name" type="text"></p>
+			<p><label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+			<p><label>img:</label> <input name="img" type="text"></p>
+			<p><label>price:</label> <input name="price" type="number" step="0.01" min="0"></p>
+			<p><label>type:</label> <input name="type" type="text"></p>
+			<p><label>stock:</label> <input name="stock" type="number" min="0"></p>
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-delete-product.php" method="post">
 			<h3>delete product</h3>
-			<p>id: <input name="id" type="text"></p>
+			<p><label>id:</label> <input name="id" type="text"></p>
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-update-product-stock.php" method="post">
 			<h3>update product's stock</h3>
-			<p>id: <input name="id" type="text"></p>
-			<p>stock: <input name="stock" type="number"></p>
+			<p><label>id:</label> <input name="id" type="text"></p>
+			<p><label>stock:</label> <input name="stock" type="number"></p>
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>
 		
 		<form action="admin-update-product-description.php" method="post">
 			<h3>update product's description</h3>
-			<p>id: <input name="id" type="text"></p>
+			<p><label>id:</label> <input name="id" type="text"></p>
 			<p>description: <textarea name="description" rows="10" cols="25">ENTER description</textarea>
 			<input type="submit" id="btn2" value="Submit" class="button">
 		</form>

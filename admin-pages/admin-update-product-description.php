@@ -33,9 +33,9 @@
                 $description=$_POST["description"];
                 $sql = "UPDATE products SET description = '$description' WHERE id = '$id'";
                 if ($conn->query($sql) === TRUE) {
-                    echo "Description successfully edited";
+                    echo "<h1>Description successfully edited!</h1>";
                 } else {
-                    echo "Error: Description failed to be edited";
+                    echo "<h1>Error: Description failed to be edited</h1>";
                 }
                 $conn->close();
             ?>

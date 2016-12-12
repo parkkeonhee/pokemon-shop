@@ -34,12 +34,13 @@
                 
                 $sql = "UPDATE products SET stock = '$stock' WHERE id = '$id'";
                 if ($conn->query($sql) === TRUE) {
-                    echo "Stock successfully edited";
+                    echo "<h1>Stock successfully edited</h1>";
                 } else {
-                    echo "Error: Stock failed to be edited";
+                    echo "<h1>Error: Stock failed to be edited</h1>";
                 }
                 $conn->close();
             ?>
+            <br>
             <a href="admin-access.php">
                 <input type="button" id="btn1" class="button" value="Admin Page">
             </a>

@@ -52,12 +52,18 @@
 				
 				if ($conn->query($sql) === TRUE) {
 					echo "<h1>New user successfully saved!</h1>";
+					echo '<a href="../login.php">
+							<input type="button" id="btn1" class="button" value="Login">
+						</a>';
 				} else {
 					echo "<h1>Error: New user failed to be saved!</h1>";
+					echo '<a href="../login.php">
+							<input type="button" id="btn1" class="button-orange" value="Register">
+						  </a>';
 				}
 				$conn->close();
 			?>
-			<a href="../login.php"><input type="button" id="btn1" value="OK"></a>
+			
 		</div>
 	</body>
 </html>

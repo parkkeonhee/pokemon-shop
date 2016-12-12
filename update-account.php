@@ -70,15 +70,15 @@
 			$sql = "INSERT INTO accounts VALUES ('$user','$password','N','$fname','$lname','$email','$phone','$sadd','$scity','$scounty','$sstate','$szip','$badd','$bcity','$bcounty','$bstate','$bzip')";
 			
 			if ($conn->query($sql) === TRUE) {
-				echo "<h1>Account successfully updated<h1>";
+				echo "<h1>Account successfully updated!<h1>";
 			} else {
-				echo "<h1>Error: Account failed to be updated</h1>";
+				echo "<h1>Error: Account failed to be updated!</h1>";
 			}
 			
 			$conn->close();
 		?>
-		<a href="login.php">
-			<input type="button" id="btn1" value="Back to Login" class="button-orange">
+		<a href="account.php">
+			<input type="button" id="btn1" value="Back to Account" class="button-orange">
 		</a>
 		</div>
 	</body>

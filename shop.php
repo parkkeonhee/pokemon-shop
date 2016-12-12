@@ -60,7 +60,7 @@
                             <input name="id" class="makehidden" type="text" value="'.$id.'">
                             <div>
                                 <img src="images/pokedex/'.$img.'" alt='.$name.'/>
-                                <input type="submit" class="button" value="'.$name.'($'.$priceView.')"/>
+                                <input type="submit" class="button" value="'.$name.'($'.$price.')"/>
                             </div>
                         </form>';
                 }

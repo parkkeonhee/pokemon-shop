@@ -54,7 +54,7 @@
                     
                     echo '<form action="item-page.php" method="post">
                     <input name="id" class="makehidden" type="text" value="'.$id.'">
-                    <div><img src= "images/pokedex/'.$img.'" alt='.$name.'> '.$name.' '.$type.' $'.$price.'
+                    <div><img src= "images/pokedex/'.$img.'" alt='.$name.'> '.$name.' $'.$price.'
                     <input type="submit" class="button" value="View"></div>
                     </form>';
                 }

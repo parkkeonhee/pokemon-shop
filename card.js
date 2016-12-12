@@ -91,6 +91,9 @@ function isValidCard() {
 }
 
 function start() {
+	document.getElementById('display').innerHTML = "";
+	document.getElementById('display2').innerHTML = "";
+
 	number = document.getElementById("num").value;
 	check1();
 	check2();

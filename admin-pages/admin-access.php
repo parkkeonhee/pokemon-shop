@@ -113,63 +113,63 @@
 		<form action="admin-create-admin.php" method="post">
 			<h3>add admin</h3>
 			<div>
-			<label>name:</label> <input name="name" type="text">
-			<br>
-			<br>
-			<label>password:</label> <input name="password" type="text">
+				<label>name:</label> <input name="name" type="text">
+				<br>
+				<br>
+				<label>password:</label> <input name="password" type="text">
 			</div>
 			<div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
 		</form>
 		
 		<form action="admin-delete-account.php" method="post">
 			<h3>delete user</h3>
 			<div>
-			<label>name:</label> <input name="name" type="text">
+				<label>name:</label> <input name="name" type="text">
 			</div>
 			<br>
 			<div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
 		</form>
 		
 		<form action="admin-change-password.php" method="post">
 			<h3>change password of account</h3>
 			<div>
-			<label>name:</label> <input name="name" type="text">
-			<br>
-			<br>
-			<label>password:</label> <input name="password" type="text">
+				<label>name:</label> <input name="name" type="text">
+				<br>
+				<br>
+				<label>password:</label> <input name="password" type="text">
 			</div>
 			<br>
 			<div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
 		</form>
 		
 		<form action="admin-add-product.php" method="post">
 			<h3>add product</h3>
 			<div>
-			<label>id:</label> <input name="id" type="text">
-			<br>
-			<br>
-			<label>name:</label> <input name="name" type="text">
-			<br>
-			<br>
-			<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
-			<br>
-			<br>
-			<label>img:</label> <input name="img" type="text">
-			<br>
-			<br>
-		    <label>price:</label> <input name="price" type="number" step="0.01" min="0">
-		    <br>
-		    <br>
-			<label>type:</label> <input name="type" type="text">
-			<br>
-			<br>
-			<label>stock:</label> <input name="stock" type="number" min="0">
+				<label>id:</label> <input name="id" type="text">
+				<br>
+				<br>
+				<label>name:</label> <input name="name" type="text">
+				<br>
+				<br>
+				<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+				<br>
+				<br>
+				<label>img:</label> <input name="img" type="text">
+				<br>
+				<br>
+				<label>price:</label> <input name="price" type="number" step="0.01" min="0">
+				<br>
+				<br>
+				<label>type:</label> <input name="type" type="text">
+				<br>
+				<br>
+				<label>stock:</label> <input name="stock" type="number" min="0">
 			</div>
 			<br>
 			<div class="sub">
@@ -180,53 +180,53 @@
 		<form action="admin-delete-product.php" method="post">
 			<h3>delete product</h3>
 			<div>
-			 <label>id:</label> <input name="id" type="text">
-			 </div>
-			 <br>
-			 <div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<label>id:</label> <input name="id" type="text">
+			</div>
+			<br>
+			<div class="sub">
+			 	<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
 		</form>
 		
 		<form action="admin-update-product-stock.php" method="post">
 			<h3>update product's stock</h3>
 			<div>
-			<label>id:</label> <input name="id" type="text">
-			<br>
-			<br>
-			<label>stock:</label> <input name="stock" type="number">
+				<label>id:</label> <input name="id" type="text">
+				<br>
+				<br>
+				<label>stock:</label> <input name="stock" type="number">
 			</div>
 			<br>
 			<div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
 		</form>
 		
 		<form action="admin-update-product-description.php" method="post">
 			<h3>update product's description</h3>
 			<div>
-			<label>id:</label> <input name="id" type="text">
-			<br>
-			<br>
-			<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+				<label>id:</label> <input name="id" type="text">
+				<br>
+				<br>
+				<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
 			</div>
 			<br>
 			<div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
 		</form>
 		
 		<form action="reset-item-table.php" method="post">
 			<h3>Clean Item Table</h3>
 			<div class="sub">
-			<input type="submit" id="btn2" value="Submit" class="button">
+				<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
 		</form>
 		
 		<form action="../login.php" method="post">
 			<h3>Logout</h3>
 			<div>
-			<input type="submit" id="btn2" value="Logout" class="button-orange">
+				<input type="submit" id="btn2" value="Logout" class="button-orange">
 			</div>
 		</form>
 </body>

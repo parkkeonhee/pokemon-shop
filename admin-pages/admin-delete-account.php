@@ -33,14 +33,16 @@
                 
                 echo "<div class='center'>";
                 if ($conn->query($sql) === TRUE) {
-                    echo "<h1>User successfully deleted</h1>";
+                    echo "<h1>User successfully deleted!</h1>";
                 } else {
-                    echo "<h1>Error: User failed to be deleted</h1>";
+                    echo "<h1>Error: User failed to be deleted!</h1>";
                 }
                 echo "</div>";
                 $conn->close();
             ?>
-            <a href="admin-access.php"><input type="button" id="btn1" value="OK"></a>
+            <a href="admin-access.php">
+                <input type="button" id="btn1" class="button" value="Admin Page">
+            </a>
         </div>
     </body>
 </html>

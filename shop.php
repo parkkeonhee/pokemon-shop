@@ -27,8 +27,6 @@
             echo '<div class="center">
                     <img src="images/pokestop.png" alt="pokestop"/>
                 </div>';
-            
-            
             if($user===0) {
                 
             }else{
@@ -59,7 +57,6 @@
                     $price=$row["price"];
                     $type=$row["type"];
                     $stock=$row["stock"];
-                    
                     
                     echo '<form action="item-page.php" method="post">
                     <input name="id" class="makehidden" type="text" value="'.$id.'">

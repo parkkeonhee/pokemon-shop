@@ -84,7 +84,7 @@
 							$_SESSION['name'] = $userName;
 						}
 					} else {
-						echo "<h1>Password is incorrect.</h1>";
+						echo "<h1>Password is incorrect!</h1>";
 						echo '<a href="login.php">
 								<input type="button" id="btn1" value="Try Again" class="button-orange">
 							</a>';
@@ -93,7 +93,7 @@
 				}
 			} else {
 				echo "<div class='center'>";
-				echo "<h1>Username not found.</h1>";
+				echo "<h1>Username not found!</h1>";
 				echo '<a href="login.php">
 						<input type="button" id="btn1" value="Try Again" class="button-orange">
 					</a>';

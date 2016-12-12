@@ -94,10 +94,10 @@
 			
 			<h2>Payment Method</h2>
 			<div id="display">
-				
+				<!-- Credit card image -->
 			</div>
 			<div id="display2">
-				
+				<!-- Valid or not -->
 			</div>
 			
 			<form action="confirmation.php" method="post">

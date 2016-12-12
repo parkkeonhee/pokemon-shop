@@ -245,7 +245,7 @@
 				<label>Name:</label> <input name="name" type="text">
 				<br>
 				<br>
-				<label>Description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
+				<label>Description:</label> <textarea name="description" rows="2" cols="34">What is interesting about this pokémon?</textarea>
 				<br>
 				<br>
 				<label>Image:</label> <input name="img" type="text">

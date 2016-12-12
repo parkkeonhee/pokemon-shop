@@ -20,6 +20,9 @@
             session_destroy();
         ?>
         <div class="center">
+            <div class="right">
+                <a href="shop.php" class="button-orange">Shopping Page</a>
+            </div>
             <img src="images/pokestop.png" alt="pokestop logo"/>
             <form action="login2.php" method="post">
                 <p>

@@ -16,12 +16,17 @@
 </head>
 
 <body>
+	<div class="right">
+		<a href="account.php">
+			<input type="button" class="button-orange" value="Back">
+		</a>
+	</div>
 	<div class="center">
 		<img src="images/pokestop.png" alt="pokestop"/>
 	</div>
-    <?php
 	
-	session_start();
+    <?php
+    	session_start();
 	$user = $_SESSION['name'];
 	
 	echo "<p class='user'>You are logged in as Trainer <b>" . $user . "</b>!</p>";
@@ -106,8 +111,5 @@ if ($result0->num_rows > 0) {
      echo "0 results";
 }
 	?>
-      <div class="go">
-	  <a href="account.php"><input type="button" class="button-orange" value="Back"></a>
-      </div>
 </body>
 </html>

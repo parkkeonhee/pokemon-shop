@@ -185,7 +185,7 @@
 			
 			<input type="submit" value="Place your order" name="placeOrder" class="button" />
 			</form>
-			<a href="account.php" class="button">Go back</a>
+			<a href="account.php" class="button-orange">Go back</a>
 			</div>
 		</div>
 	</body>

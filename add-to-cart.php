@@ -39,20 +39,20 @@
 					$stock=$_POST["stock"];
 					
 					if($number>$stock){
-						echo "Sorry in insufficient stock";
+						echo "<h1>Sorry insufficient stock</h1>";
 					} else {
 						$sql = "INSERT INTO items VALUES ('$id','$number','$user','C','','')";
 						
 						if ($conn->query($sql) === TRUE) {
-							echo "New item successfully added to cart";
+							echo "<h1>New item successfully added to cart</h1>";
 						} else {
-							echo "Error: New item failed to be added to cart";
+							echo "<h1>Error: New item failed to be added to cart</h1>";
 						}
 					}
 					$conn->close();
 				}
 			?>
-			<a href="shop.php"><input type="button" id="btn1" value="Back To Store"></a>
+			<a href="shop.php"><input type="button" id="btn1" class="button" value="Back To Store"></a>
 		</div>
 	</body>
 </html>

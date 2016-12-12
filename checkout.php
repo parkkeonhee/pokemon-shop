@@ -59,7 +59,7 @@
 						$bstate=$row["bstate"];
 						$bzip=$row["bzip"];
 						
-						echo  "<h1>Your Shipping Address</h1>";
+						echo  "<h2>Your Shipping Address</h2>";
 						echo  "Street address: ".$sadd;
 						echo  "<br>";
 						echo  "City: ".$scity;
@@ -70,7 +70,7 @@
 						echo  "<br>";
 						echo  "Zip code: ".$szip;
 						
-						echo  "<h1>Your Billing Address</h1>";
+						echo  "<h2>Your Billing Address</h2>";
 						echo  "Street address: ".$badd;
 						echo  "<br>";
 						echo  "City: ".$bcity;
@@ -87,7 +87,7 @@
 				}$conn->close();
 			?>
 			
-			<h1>Payment Method</h1>
+			<h2>Payment Method</h2>
 			<div id="display">
 				
 			</div>
@@ -129,7 +129,7 @@
 					<option value="2021">2021</option>
 				</select>
 			
-			<h1>Review Items and Shipping</h1>
+			<h2>Review Items and Shipping</h2>
 			
 			<!-- need php code here-->
 			<?php
@@ -146,12 +146,17 @@
 				
 				$sql = 'SELECT id, number FROM items WHERE username="'.$user.'" AND type="C"';
 				$result2 = $conn->query($sql);
-				echo "<h2>items</h2>";
+				echo "<h2>Items</h2>";
 				
 				if ($result2->num_rows > 0) {
 					
 					// output data of each row
-					echo "<table><tr><th>Name</th><th>number</th><th>price</th></tr>";
+					echo "<table class='center'>
+						<tr>
+							<th>Name</th>
+							<th>number</th>
+							<th>price</th>
+						</tr>";
 					
 					while($row = $result2->fetch_assoc()) {
 						$id=$row["id"];
@@ -180,7 +185,7 @@
 				}
 				echo '</div><!-- right page div 30%-->';
 				echo '<div>';
-				echo '<h2>Your order</h2>';
+				echo '<h2>Total Orders</h2>';
 				echo '<p>Items: '.$all.'</p>';
 				echo '<p>Free Shipping & Handling: 0.00</p>';
 				echo '<p>Order total: '.$all.'</p>';

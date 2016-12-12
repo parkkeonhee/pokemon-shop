@@ -9,7 +9,7 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style2.css"/>
 		<link rel="icon" type="image/x-icon" href="../images/pokeball.ico"/>
 		<title>Admin: Access</title>
 	</head>
@@ -128,6 +128,7 @@
 			<div>
 			<label>name:</label> <input name="name" type="text">
 			</div>
+			<br>
 			<div class="sub">
 			<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
@@ -141,6 +142,7 @@
 			<br>
 			<label>password:</label> <input name="password" type="text">
 			</div>
+			<br>
 			<div class="sub">
 			<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
@@ -160,13 +162,16 @@
 			<br>
 			<label>img:</label> <input name="img" type="text">
 			<br>
+			<br>
 		    <label>price:</label> <input name="price" type="number" step="0.01" min="0">
+		    <br>
 		    <br>
 			<label>type:</label> <input name="type" type="text">
 			<br>
 			<br>
 			<label>stock:</label> <input name="stock" type="number" min="0">
 			</div>
+			<br>
 			<div class="sub">
 			<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
@@ -177,6 +182,7 @@
 			<div>
 			 <label>id:</label> <input name="id" type="text">
 			 </div>
+			 <br>
 			 <div class="sub">
 			<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
@@ -187,8 +193,10 @@
 			<div>
 			<label>id:</label> <input name="id" type="text">
 			<br>
+			<br>
 			<label>stock:</label> <input name="stock" type="number">
 			</div>
+			<br>
 			<div class="sub">
 			<input type="submit" id="btn2" value="Submit" class="button">
 			</div>
@@ -202,6 +210,7 @@
 			<br>
 			<label>description:</label> <textarea name="description" rows="10" cols="25">ENTER description</textarea>
 			</div>
+			<br>
 			<div class="sub">
 			<input type="submit" id="btn2" value="Submit" class="button">
 			</div>

@@ -25,7 +25,7 @@
             }
             echo '<div class="right">
                     <a href="account.php">
-                        <input type="button" id="btn1" value="account" class="button">
+                        <input type="button" id="btn1" value="Account" class="button">
                     </a>
                 </div>';
             echo '<div class="center">
@@ -43,7 +43,6 @@
             }
             $sql1 = "SELECT id, name, description, img, price, type, stock  FROM products";
             $result1 = $conn->query($sql1);
-            echo "<h1 class='center'>Pokémons</h1>";
             $aa = 1;
             
                     

@@ -9,7 +9,7 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" type="text/css" href="../css/style2.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 		<link rel="icon" type="image/x-icon" href="../images/pokeball.ico"/>
 		<title>Admin: Access</title>
 	</head>

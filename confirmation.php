@@ -101,7 +101,7 @@
         echo '<img src="images/pokestop.png" alt="pokeshop logo"/>';
         echo '<!-- top-center div -->';
         echo '<div>';
-        echo '<h3>Order Confirmation</h3>';
+        echo '<h1>Order Confirmation</h1>';
         echo 'Order #'.$ordernum;
         echo '</div>';
         echo '<!-- top-right div -->';
@@ -112,17 +112,17 @@
         echo '<!-- middle div -->';
         echo '<div>';
         echo '<div>';
-        echo '<h3>Your estimated deliver date is:</h3>';
+        echo '<h2>Your estimated deliver date is:</h2>';
         
         echo date('m/d/Y', strtotime($date. ' + 5 days'));
         //order date + 5 days
         //Order #1532250234
         echo '<br/>';
-        echo '<h3>Your shipping speed:</h3>';
+        echo '<h2>Shipping speed:</h2>';
         echo '<ul>';
         echo '<li>Standard free shipping</li>';
         echo '</ul>';
-        echo '<h3>Your order was sent to:</h3>';
+        echo '<h2>Your order was sent to:</h2>';
         
         $sql0 = "SELECT username, password, admin, fname, lname, email, phone, sadd, scity, scounty, sstate, szip, badd, bcity, bcounty, bstate, bzip FROM accounts WHERE username='$user'";
         $result0 = $conn->query($sql0);
@@ -159,7 +159,7 @@
         echo '</div>';
         echo '<!-- bottom div -->';
         echo '<div>';
-        echo '<h3>Order Details</h3>';
+        echo '<h2>Order Details</h2>';
         
         //Order #1532250234
         echo $ordernum.'<br>';
@@ -169,7 +169,14 @@
         
         if ($result2->num_rows > 0) {
         	// output data of each row
-        	echo "<table><tr><th>Img</th><th>Name</th><th>number</th><th>price</th></tr>";
+        	echo "<table style='center'>
+        			<tr>
+        				<th>Pokémon</th>
+        				<th>Name</th>
+        				<th>number</th>
+        				<th>price</th>
+        			</tr>";
+        			
         	while($row = $result2->fetch_assoc()) {
         		$id=$row["id"];
         		$number=$row["number"];
@@ -192,12 +199,21 @@
         			
         		}
         		$total=$price*$number;
-        		echo "<tr><td><img src= \"images/pokedex/".$img."\" alt='.$name.'></td><td>".$name."</td><td>".$number."</td><td>".$total."</td></tr>";
+        		echo "
+        			<tr>
+        				<td>
+        					<img src= \"images/pokedex/".$img."\" alt='.$name.'>
+        				</td>
+        				<td>".$name."</td>
+        				<td>".$number."</td>
+        				<td>".$total."</td>
+        			</tr>";
         	}
         	echo "</table>";
         	
         } else {
-        	echo "No purchases<br>";
+        	echo "No purchases
+        	<br>";
         }
         
         // [Image]  [Pokemon name]  [Price]

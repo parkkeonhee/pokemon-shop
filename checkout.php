@@ -154,8 +154,8 @@
 					echo "<table class='center'>
 						<tr>
 							<th>Name</th>
-							<th>number</th>
-							<th>price</th>
+							<th>Number</th>
+							<th>Price</th>
 						</tr>";
 					
 					while($row = $result2->fetch_assoc()) {
@@ -174,10 +174,17 @@
 								$price=$row["price"];
 							}
 						} else {
+							
 						} 
 						$total=$price*$number;
 						$all+=$total;
-						echo "<tr><td>".$name."</td><td>".$number."</td><td>".$total."</td></tr>";
+						echo "<tr><td>"
+							.$name
+							."</td><td>"
+							.$number
+							."</td><td>"
+							.$total
+							."</td></tr>";
 					}
 					echo "</table>";
 				} else {

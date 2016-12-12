@@ -14,6 +14,9 @@
 		<link rel="icon" type="image/x-icon" href="images/pokeball.ico"/>
 	</head>
 	<body>
+		<div class="center">
+            <img src="images/pokestop.png" alt="pokestop"/>
+        </div>
 		<div>
 		<?php
 			session_start();

@@ -16,6 +16,9 @@
 </head>
 
 <body>
+	<div class="center">
+		<img src="images/pokestop.png" alt="pokestop"/>
+	</div>
     <?php
 	
 	session_start();

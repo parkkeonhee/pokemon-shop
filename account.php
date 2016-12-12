@@ -25,7 +25,7 @@
 			if($user===0)
 			{
 				echo '<a href="login.php">
-						<input type="button" id="btn1" value="Log in">
+						<input type="button" id="btn1" value="Login" class="button">
 						</a>';
 			}else{
 				$servername = "localhost";

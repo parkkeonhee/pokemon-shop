@@ -22,7 +22,11 @@
             }else{
                 echo $user;
             }
-            echo '<a href="account.php"><input type="button" id="btn1" value="account"></a>';
+            echo '<div class="right">
+                    <a href="account.php">
+                        <input type="button" id="btn1" value="account" class="button">
+                    </a>
+                </div>';
             
             $servername = "localhost";
             $username = "knguyen74";
@@ -35,7 +39,7 @@
             }
             $sql1 = "SELECT id, name, description, img, price, type, stock  FROM products";
             $result1 = $conn->query($sql1);
-            echo "<h3>PRODUCTS</h3>";
+            echo "<h1 class='center'>Pokémons</h1>";
             
             if ($result1->num_rows > 0) {
                 // output data of each row
@@ -105,7 +109,6 @@
         end of bottom right category
     </div>
      end of bottom page category 70%
--->    
-</body>
-
+-->
+    </body>
 </html>

@@ -27,7 +27,7 @@
 			}
 			
 			$id=$_POST["id"];
-			$sql1 = "SELECT id, name, description, img, price, type, stock  FROM products WHERE id='$id'";
+			$sql1 = "SELECT id, name, description, img, price, type, stock FROM products WHERE id='$id'";
 			$result1 = $conn->query($sql1);
 			
 			if ($result1->num_rows > 0) {
@@ -52,9 +52,9 @@
 					echo '<input name="id" class="makehidden" type="text" value="'.$id.'">';
 					echo '<input name="stock" class="makehidden" type="text" value="'.$stock.'">';
 					echo '<p>Amount: <input name="number" type="number" min="1" value="1"></p><br>';
-					echo  "<input type=\"submit\" value=\"Add to cart\">";
+					echo  "<input type=\"submit\" value=\"Add to cart\" class=\"button\">";
 					echo '</form>';
-					echo '<a href="shop.php"><input type="button" id="btn1" value="Back"></a>';
+					echo '<a href="shop.php"><input type="button" class="button-orange" id="btn1" value="Back"></a>';
 				}
 			} else {
 				echo "0 results";

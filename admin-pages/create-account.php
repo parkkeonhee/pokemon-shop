@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <div class="right">
+        <a href="../login.php" class="button-orange">Go back</a>
+    </div>
     <div class="center">
         <img src="../images/pokestop.png" alt="pokestop"/>
     </div>
@@ -88,8 +91,5 @@
       </div>
       </div>
       </form>
-      <div class="go">
-      <a href="../login.php" class="button-orange">Go back</a>
-      </div>
 </body>
 </html>

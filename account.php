@@ -17,7 +17,12 @@
 		<?php
 			session_start();
 			$user = $_SESSION['name'];
-			
+			echo '<div class="right">
+					<a href="shop.php">
+						<input type="button" id="btn2" value="Back" class="button-orange">
+					</a>';
+			echo '<a href="welcome.php" class="button-orange">Logout</a>';
+			echo '</div>';
 			
 			echo '<div class="center">
 					<img src="images/pokestop.png" alt="pokestop"/>
@@ -144,9 +149,6 @@
 				echo '<div class="center">';
 				echo '<a href="account-change.php"><input type="button" id="btn0" value="Change Info" class="button"></a>';
 				echo '<a href="checkout.php"><input type="button" id="btn1" value="Checkout" class="button"></a>';
-				echo '<br>';
-				echo '<a href="shop.php"><input type="button" id="btn2" value="Back" class="button-orange"></a>';
-				echo '<a href="welcome.php" class="button-orange">Logout</a>';
 				echo '</div>';
 			}
 		?>

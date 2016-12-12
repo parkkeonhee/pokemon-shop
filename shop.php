@@ -42,11 +42,9 @@
             if ($conn->connect_error) {
                 die("Connection failed: " . $conn->connect_error);
             }
-            $sql1 = "SELECT id, name, description, img, price, type, stock  FROM products";
+            $sql1 = "SELECT id, name, description, img, price, type, stock FROM products";
             $result1 = $conn->query($sql1);
-            $aa = 1;
             
-                    
             if ($result1->num_rows > 0) {
                 // output data of each row
                 while($row = $result1->fetch_assoc()) {
@@ -58,28 +56,15 @@
                     $type=$row["type"];
                     $stock=$row["stock"];
                     
-                    echo '<form action="item-page.php" method="post">
-                    <input name="id" class="makehidden" type="text" value="'.$id.'">
-                    <table class="center">';
-                    if($aa % 3 == 0 || $aa == 1){
-                        echo '<tr>';
-                    }
-                    echo
-                        '<td>
-                            <img src= "images/pokedex/' . $img . '" alt=' . $name . '/>
-                        </td>
-                        <td>
-                            <input type="submit" class="button" value="View ' .$name . ' ($'.$price.')"/>
-                        </td>';
-                    
-                    if($aa % 3 == 0 || $aa == 1){
-                        echo '</tr>';
-                    }
+                    echo '<form action="item-page.php" method="post">   
+		 <input name="id" class="makehidden" type="text" value="'.$id.'">
+		 <div><img src= "images/pokedex/'.$img.'" alt='.$name.'> '.$name.' '.$type.' '.$price.'
+		 <input type="submit" class="button" value="View"></div>
+		 </form>';
                 }
             } else {
                 echo "0 results";
             }
-            echo '</table></form>';
             $conn->close();
             ?>
 <!--

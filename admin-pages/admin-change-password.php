@@ -40,7 +40,10 @@
 	        }
 	        $conn->close();
 	   ?>
-	   <a href="admin-access.php"><input type="button" class="button" id="btn1" value="OK"></a>
+	   <br>
+	   <a href="admin-access.php">
+	   	<input type="button" class="button" id="btn1" value="Admin Page">
+	   </a>
 	</div>
 </body>
 </html>

@@ -45,13 +45,35 @@
 					$stock=$row["stock"];
 					
 					echo '<div class="center">';
-					echo '<img src= "images/pokedex/'.$img.'" alt='.$name.'><br>';
-					echo $id.'<br>';
-					echo $name.'<br>';
-					echo $type.'<br>';
-					echo $description.'<br>';
-					echo '$'.$price.'<br>';
-					echo $stock.' in stock<br>';
+					echo '<img src= "images/pokedex/'.$img.'" alt='.$name.'/><br><br>';
+					
+					echo '<table>';
+					echo 
+						'<tr>
+							<th>Pokédex #</th>
+							<td>'.$id.'</td>
+						</tr>
+						<tr>
+							<th>Pokémon</th>
+							<td>'.$name.'</td>
+						</tr>
+						<tr>
+							<th>Type</th>
+							<td>'.$type.'</td>
+						</tr>
+						<tr>
+							<th>Description</th>
+							<td>'.$description.'<td>
+						</tr>
+						<tr>
+							<th>Price</th>
+							<td>$'.$price.'</td>
+						</tr>
+						<tr>
+							<th>Stock:</th>
+							<td>'.$stock.'</td>
+						</tr>';
+					echo '</table>';
 					echo "<form action=\"add-to-cart.php\" method=\"post\">";
 					echo '<input name="id" class="makehidden" type="text" value="'.$id.'">';
 					echo '<input name="stock" class="makehidden" type="text" value="'.$stock.'">';

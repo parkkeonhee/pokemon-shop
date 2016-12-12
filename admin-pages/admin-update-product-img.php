@@ -30,7 +30,7 @@
                 }
                 
                 $id=$_POST["id"];
-                $stock=$_POST["stock"];
+                $img=$_POST["img"];
                 
                 $sql = "UPDATE products SET img = '$img' WHERE id = '$id'";
                 if ($conn->query($sql) === TRUE) {

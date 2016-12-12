@@ -16,7 +16,7 @@
 	<body>
 		<form action="../welcome.php" method="post">
 			<div class="right">
-				<input type="submit" id="btn2" value="Logout" class="button-orange">
+				<input type="submit" value="Logout" class="button-orange">
 			</div>
 		</form>
 		<div class="center">
@@ -203,7 +203,7 @@
 				<label>Password:</label> <input name="password" type="text">
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Add" class="button">
+				<input type="submit" value="Add" class="button">
 			</div>
 		</form>
 		
@@ -215,7 +215,7 @@
 				<label>Name:</label> <input name="name" type="text">
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Delete" class="button">
+				<input type="submit" value="Delete" class="button">
 			</div>
 		</form>
 		
@@ -230,7 +230,7 @@
 				<label>Password:</label> <input name="password" type="text">
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Change Password" class="button">
+				<input type="submit" value="Change Password" class="button">
 			</div>
 		</form>
 		
@@ -260,7 +260,7 @@
 				<label>Stock:</label> <input name="stock" type="number" min="0">
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Add Product" class="button">
+				<input type="submit" value="Add Product" class="button">
 			</div>
 		</form>
 		
@@ -272,7 +272,7 @@
 				<label>ID:</label> <input name="id" type="text">
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Delete Product" class="button">
+				<input type="submit" value="Delete Product" class="button">
 			</div>
 		</form>
 		
@@ -287,7 +287,7 @@
 				<label>Stock:</label> <input name="stock" type="number">
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Update Stock" class="button">
+				<input type="submit" value="Update Stock" class="button">
 			</div>
 		</form>
 		
@@ -300,7 +300,7 @@
 				<label>Image:</label> <input name="img" type="text">
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Update Stock" class="button">
+				<input type="submit" value="Update Image" class="button">
 			</div>
 		</form>
 		
@@ -317,7 +317,7 @@
 				<textarea name="description" rows="2" cols="34">What is interesting about this pokémon?</textarea>
 				<br>
 				<br>
-				<input type="submit" id="btn2" value="Update Description" class="button">
+				<input type="submit" value="Update Description" class="button">
 			</div>
 		</form>
 		
@@ -326,7 +326,7 @@
 		<form action="reset-item-table.php" method="post">
 			<h2>Clean Item Table</h2>
 			<div>
-				<input type="submit" id="btn2" value="Clean Items" class="button">
+				<input type="submit" value="Clean Items" class="button">
 			</div>
 		</form>
 </body>
